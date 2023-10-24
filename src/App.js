@@ -15,7 +15,7 @@ function App() {
       <section className="section is-medium">
         <h1 className="title">Uma Breve introdução ao sistema RPG2D</h1>
         <h2 className="subtitle">
-          Um sistema <strong>Universal, e simples</strong>, Para a sua mesa de RPG. ..
+          Um sistema <strong>Universal, e simples</strong>, Para a sua mesa de RPG
         </h2>
       </section>
       <Footer />
