@@ -15,9 +15,72 @@ function HomePage() {
           Um sistema <strong>Universal, e simples</strong>, Para a sua mesa de RPG teste
         </h2>
       </section>
-      <Footer />
+      <section className='section'>
+        <div className="box">
+          <h2>Simplificando mecânicas de jogo</h2>
+          <br></br>
+          <p>A Principal ídeia por trás do RPG foi simplificar o RPG de mesa, para um sistema que não tenha atributos e pericías em exagero,
+            como por exemplo em chamado de Cthulhu que muitas das perícias nunca são usadas na mesa
+            <br></br>
+            <p>Dessa forma, o RPG2D se distribui com bases no seguintes atributos principais</p>
+            <br></br>
+            <div id='list'>
+            
+            <ol>
+              <li>Força</li>
+              <li>Destreza</li>
+              <li>Inteligência</li>
+              <li>Sabedoria</li>
+              <li>Carisma</li>
+              <li>Constituição</li>
+            </ol>
+            </div>
+          </p>
+          <section className='section'>
+            <div class="columns">
+              <div class="column col-atr">
+                Atributos do corpo
+                <ul>
+                  <li>Força</li>
+                  <li>Destreza</li>
+                </ul>
+              </div>
+              <div class="column col-atr">
+                Atributos da mente
+                <ul>
+                  <li>Inteligêcnia</li>
+                  <li>Sabedoria</li>
+                </ul>
+              </div>
+              <div class="column col-atr">
+                Atributos de força de vontade
+                <ul>
+                  <li>Constituição</li>
+                  <li>Carisma</li>
+                </ul>
+              </div>
+              <div class="column col-atr">
+                Atributos de Combate               
+                <ul>
+                  <li>Armas de uma mão</li>
+                  <li>Armas de duas mãos</li>
+                  <li>Pontaria</li>
+                </ul>
+              </div>
+              <div class="column col-atr">
+                Atributos sem definição
+                <ul>
+                  <li>Força</li>
+                  <li>Destreza</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
       <h1>Página Inicial</h1>
       <Link to="/contato">Ir para a página de contato</Link>
+      <Footer />
     </div>
   );
 }

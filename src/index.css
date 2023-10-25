@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.col-atr{
+  border: 2px solid rgb(19, 143, 91);
+  border-radius: 15px;
+  background-color: rgb(124, 233, 170);
+  margin: 15px;
+  padding-left: 20px;
+}
+
+#Footer {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+#list {padding: 10px; }
