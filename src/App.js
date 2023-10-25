@@ -5,7 +5,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer'; 
 
 
-
+/* 
+o comando para reverter as alterações é git reset --hard HEAD
+*/
 
 function App() {
   return (
