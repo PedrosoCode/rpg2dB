@@ -1,30 +1,18 @@
-import logo from './logo.svg';
-import './bulma/css/bulma.min.css';
-import './App.css';
-import Navbar from './components/Navbar'; 
-import Footer from './components/Footer'; 
-
-
-/* 
-o comando para reverter as alterações é git reset --hard HEAD
-*/
+// App.js
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      {/* Outro conteúdo do seu aplicativo */}
-      <section className="section is-medium">
-        <h1 className="title">Uma Breve introdução ao sistema RPG2D</h1>
-        <h2 className="subtitle">
-          Um sistema <strong>Universal, e simples</strong>, Para a sua mesa de RPG teste
-        </h2>
-      </section>
-      <Footer />
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contato" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 
 export default App;
