@@ -5,6 +5,10 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import './bulma/css/bulma.min.css';
 
+/* 
+o comando para reverter as alterações é git reset --hard HEAD
+*/
+
 function App() {
   return (
     <BrowserRouter>
