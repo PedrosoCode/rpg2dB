@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
+import TestPage from './pages/TestPage';
 import './bulma/css/bulma.min.css';
 import './index.css';
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contato" element={<ContactPage />} />
+        <Route path="/teste" element={<TestPage />} />
       </Routes>
     </BrowserRouter>
   );

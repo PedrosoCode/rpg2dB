@@ -80,6 +80,7 @@ function HomePage() {
       </section>
       <h1>Página Inicial</h1>
       <Link to="/contato">Ir para a página de contato</Link>
+      <Link to="/teste">Ir para a página de teste</Link>
       <Footer />
     </div>
   );
