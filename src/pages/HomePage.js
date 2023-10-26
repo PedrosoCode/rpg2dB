@@ -81,6 +81,18 @@ function HomePage() {
       <h1>Página Inicial</h1>
       <Link to="/contato">Ir para a página de contato</Link>
       <Link to="/teste">Ir para a página de teste</Link>
+      <Link to="/WorldPage">
+      <button class="button is-large is-fullwidth is-rounded is-success">Acessar página de worldbuilding</button>
+      </Link>
+      <br></br>
+      <Link to="/SheetsPage">
+      <button class="button is-large is-fullwidth is-rounded is-success">Acessar página de Fichas</button>
+      </Link>
+      <br></br>
+      <Link to="/EquipsPage">
+      <button class="button is-large is-fullwidth is-rounded is-success">Acessar página de ítens/equipamentos</button>
+      </Link>
+      <br></br>
       <Footer />
     </div>
   );

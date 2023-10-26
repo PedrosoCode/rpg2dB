@@ -6,6 +6,9 @@ import ContactPage from './pages/ContactPage';
 import TestPage from './pages/TestPage';
 import './bulma/css/bulma.min.css';
 import './index.css';
+import SheetsPage from './pages/SheetsPage';
+import EquipsPage from './pages/EquipsPage';
+import WorldPage from './pages/WorldPage';
 
 /* 
 o comando para reverter as alterações é git reset --hard HEAD
@@ -18,6 +21,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contato" element={<ContactPage />} />
         <Route path="/teste" element={<TestPage />} />
+        <Route path="/SheetsPage" element={<SheetsPage />} />
+        <Route path="/EquipsPage" element={<EquipsPage />} />
+        <Route path="/WorldPage" element={<WorldPage />} />
       </Routes>
     </BrowserRouter>
   );
