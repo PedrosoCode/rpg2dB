@@ -25,3 +25,11 @@ code {
   color: aliceblue;
 }
 #list {padding: 10px; }
+
+.teste {
+  color: blue;
+}
+
+.colwrap {
+  flex-wrap: wrap;
+}

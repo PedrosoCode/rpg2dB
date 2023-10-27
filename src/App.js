@@ -10,6 +10,7 @@ import SheetsPage from './pages/SheetsPage';
 import EquipsPage from './pages/EquipsPage';
 import WorldPage from './pages/WorldPage';
 
+
 /* 
 o comando para reverter as alterações é git reset --hard HEAD
 */

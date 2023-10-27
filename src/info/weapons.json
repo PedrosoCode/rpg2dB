@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Espada Curta",
+    "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante",
+    "teste": "testeee"
+  },
+  {
+    "name": "Espada Longa",
+    "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante"
+  },
+  {
+    "name": "Adaga",
+    "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante"
+  },
+  {
+    "name": "Rapiera",
+    "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante"
+  },
+  {
+    "name": "Machado",
+    "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante"
+  }
+]
