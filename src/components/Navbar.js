@@ -2,71 +2,67 @@ function Navbar() {
     // Conteúdo do seu Navbar
     return (
 
-<nav class="navbar is-transparent">
-<div class="navbar-brand">
-  <a class="navbar-item" href="https://bulma.io">
-    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
-  </a>
-  <div class="navbar-burger" data-target="navbarExampleTransparentExample">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-
-<div id="navbarExampleTransparentExample" class="navbar-menu">
-  <div class="navbar-start">
-    <a class="navbar-item" href="https://bulma.io/">
-      Meu currículo
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://localhost:3000">
+      <img src="https://cdn-icons-png.flaticon.com/512/6729/6729800.png" width="30" height="30"></img>
     </a>
-    <div class="navbar-item has-dropdown is-hoverable">
-      <a class="navbar-link" href="">
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
         Home
       </a>
-      <div class="navbar-dropdown is-boxed">
-        <a class="navbar-item" href="">
-          ídeia do projeto
-        </a>
-        <a class="navbar-item" href="">
-          Ficha
-        </a>
-        <a class="navbar-item" href="">
-          Mecânicas
-        </a>
-        <a class="navbar-item" href="">
-          Misc
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <div class="navbar-end">
-    <div class="navbar-item">
-      <div class="field is-grouped">
-        <p class="control">
-          <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-            <span>
-              Tweet
-            </span>
+      <a class="navbar-item">
+        Documentation
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            About
           </a>
-        </p>
-        <p class="control">
-          <a class="button is-primary" href="">
-            <span class="icon">
-              <i class="fas fa-download"></i>
-            </span>
-            <span>Worldbuilding</span>
+          <a class="navbar-item">
+            Jobs
           </a>
-        </p>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider"></hr>
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Meu currículo</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </nav>
-);
+    )
 }
 
 export default Navbar;

@@ -9,12 +9,14 @@ function HomePage() {
     <div>
       <Navbar />
 
-      <section className="section is-medium">
-        <h1 className="title">Uma Breve introdução ao sistema RPG2D</h1>
-        <h2 className="subtitle">
+      <section className="section is-medium mainhead">
+        
+        <h1 className="headtext">Uma Breve introdução ao sistema RPG2D</h1>
+        <h2 className="headtext">
           Um sistema <strong>Universal, e simples</strong>, Para a sua mesa de
           RPG
         </h2>
+        <div className="overlay"></div>
       </section>
       <section className="section">
         <div className="box">
