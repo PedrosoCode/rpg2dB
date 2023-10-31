@@ -47,17 +47,15 @@ function HomePage() {
           <section className="section">
             <div class="columns">
               <div class="column col-atr">
-                Atributos do corpo
+                Simplicidade
                 <ul>
-                  <li>Força</li>
-                  <li>Destreza</li>
+                  <p>O foco Principal do RPG2D, é ser um sistema simples, com coisas mais complexas sendo adicionadas a gosto da mesa</p>
                 </ul>
               </div>
               <div class="column col-atr">
-                Atributos da mente
+                Builds, e Flexibilidade
                 <ul>
-                  <li>Inteligêcnia</li>
-                  <li>Sabedoria</li>
+                  <p>No RPG2D não temos Classes, Pela Flexibilidade como você monta seus personagens, você tem controle total sobre como fazer sua build e estilo de jogo</p>
                 </ul>
               </div>
               <div class="column col-atr">
