@@ -23,26 +23,13 @@ function HomePage() {
           <h2>Simplificando mecânicas de jogo</h2>
           <br></br>
           <p>
-            A Principal ídeia por trás do RPG foi simplificar o RPG de mesa,
-            para um sistema que não tenha atributos e pericías em exagero, como
-            por exemplo em chamado de Cthulhu que muitas das perícias nunca são
-            usadas na mesa
+            Por meio dessa Homepage vou lhe apresentar o sistema, e te convencer a dar uma chance
             <br></br>
             <p>
-              Dessa forma, o RPG2D se distribui com bases no seguintes atributos
+              Dessa forma, o RPG2D se distribui com bases no seguintes pilares
               principais
             </p>
             <br></br>
-            <div id="list">
-              <ol>
-                <li>Força</li>
-                <li>Destreza</li>
-                <li>Inteligência</li>
-                <li>Sabedoria</li>
-                <li>Carisma</li>
-                <li>Constituição</li>
-              </ol>
-            </div>
           </p>
           <section className="section">
             <div class="columns">
