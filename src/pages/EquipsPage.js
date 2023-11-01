@@ -59,9 +59,9 @@ function EquipsPage() {
               onClick={() => handleTagSelect("tag1")}
               style={{
                 backgroundColor: selectedTags.includes("tag1")
-                  ? "blue"
-                  : "gray",
-                color: selectedTags.includes("tag1") ? "white" : "black",
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("tag1") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
@@ -73,9 +73,9 @@ function EquipsPage() {
               onClick={() => handleTagSelect("tag2")}
               style={{
                 backgroundColor: selectedTags.includes("tag2")
-                  ? "blue"
-                  : "gray",
-                color: selectedTags.includes("tag2") ? "white" : "black",
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("tag2") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
