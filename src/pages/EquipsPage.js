@@ -2,6 +2,19 @@ import React, { useState } from "react";
 import JsonWeapons from "../info/weapons.json";
 import { Navbar, Footer } from "../globals/globals";
 
+// Componente Tags para exibir as tags de uma arma
+function Tags({ tags }) {
+  return (
+    <div>
+      {tags.map((tag, index) => (
+        <span key={index} className="tag">
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 function EquipsPage() {
   const [searchText, setSearchText] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
@@ -83,8 +96,6 @@ function EquipsPage() {
             >
               Tag 2
             </button>
-
-            {/* Adicione botões para outras tags, se necessário */}
           </div>
 
           {/* Botão para limpar filtros */}
@@ -101,6 +112,8 @@ function EquipsPage() {
                   </header>
                   <div className="card-content">
                     <div className="content">
+                      <Tags tags={json.tags} />
+                      <br />
                       O atributo de acerto é {json.atrAcerto}
                       <br></br>O atributo Para Bonus de dano é {json.atrBonus}
                       <br></br>

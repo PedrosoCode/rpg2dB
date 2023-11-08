@@ -37,8 +37,26 @@
     "tags": ["Tag3", "tag2"]
   },
   {
+    "name": "Peixe",
+    "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante",
+    "tags": ["Tag3", "tag2"]
+  },
+  {
     "name": "Machado",
     "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante",
+    "tags": ["tag1", "Tag3"]
+  },
+  {
+    "name": "greatsword",
+    "atrAcerto": "2H",
     "atrBonus": "FOR ou DEX",
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
