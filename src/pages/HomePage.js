@@ -97,6 +97,11 @@ function HomePage() {
           Acessar página de ítens/equipamentos
         </button>
       </Link>
+      <Link to="/SpellsPage">
+        <button class="button is-large  is-rounded is-success">
+          Acessar página de SpellCasting
+        </button>
+      </Link>
       <br></br>
       <Footer />
     </div>

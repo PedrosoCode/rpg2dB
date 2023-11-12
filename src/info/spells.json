@@ -1,26 +1,44 @@
 [
-    {
-      "name": "name",
-      "requisitos": "requisitos",
-      "casting": "casting",
-      "reach": "reach",
-      "duration": "duration",
-      "concen": "concen",
-      "effect": "effect",
-      "pluseff1": "pluseff1",
-      "pluseff2": "pluseff2",
-      "pluseff3": "pluseff3",
-      "pluseff4": "pluseff4"
-    },
-    {
-      "title": "JSON 2",
-      "description": "Este é o JSON 2",
-      "link": "https://www.exemplo.com/json2"
-    },
-    {
-      "title": "JSON 3",
-      "description": "Este é o JSON 3",
-      "link": "https://www.exemplo.com/json3"
-    }
-  ]
-  
+  {
+    "name": "Mísseis Mágicos",
+    "requisitos": "Gesto, Som",
+    "casting": "1 ação",
+    "reach": "65ft",
+    "duration": "Instantâneo",
+    "concen": "não",
+    "effect": "você conjura 3 mísseis mágicos, faça uma rolagem de acerto para cada Usando Spellcasting cada Míssel mágico causa 1d4 de dano mágico",
+    "pluseff1": "+5 se quiser adicionar +1 míssel mágico",
+    "pluseff2": "+15 se quiser Mudar o dano de cada Para 1d8",
+    "pluseff3": "Indefinido",
+    "pluseff4": "Indefinido",
+    "tags": ["tag1", "Tag3"]
+  },
+  {
+    "name": "name2",
+    "requisitos": "requisitos",
+    "casting": "casting",
+    "reach": "reach",
+    "duration": "duration",
+    "concen": "concen",
+    "effect": "effect",
+    "pluseff1": "pluseff1",
+    "pluseff2": "pluseff2",
+    "pluseff3": "pluseff3",
+    "pluseff4": "pluseff4",
+    "tags": ["tag1", "Tag3"]
+  },
+  {
+    "name": "name3",
+    "requisitos": "requisitos",
+    "casting": "casting",
+    "reach": "reach",
+    "duration": "duration",
+    "concen": "concen",
+    "effect": "effect",
+    "pluseff1": "pluseff1",
+    "pluseff2": "pluseff2",
+    "pluseff3": "pluseff3",
+    "pluseff4": "pluseff4",
+    "tags": ["tag1", "Tag3"]
+  }
+]

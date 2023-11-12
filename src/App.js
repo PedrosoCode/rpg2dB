@@ -9,6 +9,7 @@ import './index.css';
 import SheetsPage from './pages/SheetsPage';
 import EquipsPage from './pages/EquipsPage';
 import WorldPage from './pages/WorldPage';
+import SpellsPage from './pages/SpellsPage';
 
 
 /* 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/SheetsPage" element={<SheetsPage />} />
         <Route path="/EquipsPage" element={<EquipsPage />} />
         <Route path="/WorldPage" element={<WorldPage />} />
+        <Route path="/SpellsPage" element={<SpellsPage />} />
       </Routes>
     </BrowserRouter>
   );

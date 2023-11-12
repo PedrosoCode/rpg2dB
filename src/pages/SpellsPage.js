@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import JsonWeapons from "../info/weapons.json";
+import spellsData from "../info/spells.json";
 import { Navbar, Footer } from "../globals/globals";
 
-// Componente Tags para exibir as tags de uma arma
 function Tags({ tags }) {
   return (
     <div>
@@ -42,13 +41,13 @@ function SpellsPage() {
     setFiltersActive(false);
   };
 
-  const filteredWeapons = JsonWeapons.filter((weapon) => {
-    const nameMatch = weapon.name
+  const filteredSpells = spellsData.filter((spell) => {
+    const nameMatch = spell.name
       .toLowerCase()
       .includes(searchText.toLowerCase());
     const tagsMatch =
       selectedTags.length === 0 ||
-      selectedTags.every((tag) => weapon.tags.includes(tag));
+      selectedTags.every((tag) => spell.tags.includes(tag));
     return nameMatch && tagsMatch;
   });
 
@@ -58,7 +57,6 @@ function SpellsPage() {
       <h1>Página de SpellsPage</h1>
       <section className="section">
         <div className="box">
-          {/* Campo de pesquisa */}
           <input
             type="text"
             placeholder="Buscar por nome"
@@ -66,7 +64,6 @@ function SpellsPage() {
             onChange={handleSearchTextChange}
           />
 
-          {/* Botões de filtro de tags */}
           <div>
             <button
               onClick={() => handleTagSelect("tag1")}
@@ -98,32 +95,41 @@ function SpellsPage() {
             </button>
           </div>
 
-          {/* Botão para limpar filtros */}
           {filtersActive && (
             <button onClick={clearFilters}>Limpar Filtros</button>
           )}
 
           <div className="columns is-multiline">
-            {filteredWeapons.map((json, index) => (
+            {filteredSpells.map((spell, index) => (
               <div className="column is-one-quarter" key={index}>
                 <div className="card equips-card">
                   <header className="card-header">
-                    <p className="card-header-title">{json.name}</p>
+                    <p className="card-header-title">{spell.name}</p>
                   </header>
                   <div className="card-content">
                     <div className="content">
-                      <Tags tags={json.tags} />
+                      <Tags tags={spell.tags} />
                       <br />
-                      O atributo de acerto é {json.atrAcerto}
-                      <br></br>O atributo Para Bonus de dano é {json.atrBonus}
-                      <br></br>
-                      Lançamento: {json.throw}
-                      <br></br>
-                      Dano: {json.damage}
-                      <br></br>
-                      Tipo de dano: {json.dtype}
-                      <br></br>
-                     {json.teste}
+                      {/* Aqui vão os outros campos do arquivo JSON */}
+                      Requisitos:  {spell.requisitos}
+                      <br /><span className="spellDesc">Tempo de Casting:</span> 
+                            <span className="spellContent">{spell.casting}</span>
+                      <br />
+                      alcance: {spell.reach}
+                      <br />
+                      duração: {spell.duration}
+                      <br />
+                      utiliza concentração? {spell.concen}
+                      <br />
+                      efeito: {spell.effect}
+                      <br />
+                      efeito adicional 1: {spell.pluseff1}
+                      <br />
+                      efeito adicional 2: {spell.pluseff2}
+                      <br />
+                      efeito adicional 3: {spell.pluseff3}
+                      <br />
+                      efeito adicional 4: {spell.pluseff4}
                       <br />
                     </div>
                   </div>

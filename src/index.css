@@ -63,3 +63,12 @@ code {
   position: relative; /* Adicione essa propriedade para ajustar o texto */
   z-index: 2; /* Defina um valor maior para manter o texto acima do overlay */
 }
+
+.spellContent {
+  color: mediumblue;
+}
+
+.spellDesc {
+  color: navy;
+  font-weight: bold;
+}
