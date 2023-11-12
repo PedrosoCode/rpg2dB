@@ -1,0 +1,26 @@
+[
+    {
+      "name": "name",
+      "requisitos": "requisitos",
+      "casting": "casting",
+      "reach": "reach",
+      "duration": "duration",
+      "concen": "concen",
+      "effect": "effect",
+      "pluseff1": "pluseff1",
+      "pluseff2": "pluseff2",
+      "pluseff3": "pluseff3",
+      "pluseff4": "pluseff4"
+    },
+    {
+      "title": "JSON 2",
+      "description": "Este é o JSON 2",
+      "link": "https://www.exemplo.com/json2"
+    },
+    {
+      "title": "JSON 3",
+      "description": "Este é o JSON 3",
+      "link": "https://www.exemplo.com/json3"
+    }
+  ]
+  

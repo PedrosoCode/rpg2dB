@@ -1,5 +1,16 @@
 [
   {
+    "name": "teste",
+    "atrAcerto": "1H ou 2H",
+    "atrBonus": "FOR ou DEX",
+    "throw": "Não",
+    "damage": "1D6+BON ou 1D6+2+BON",
+    "dtype": "Cortante",
+    "teste": "testeee",
+    "excec":"",
+    "tags": ["tag1", "Tag3"]
+  },
+  {
     "name": "Espada Curta",
     "atrAcerto": "1H ou 2H",
     "atrBonus": "FOR ou DEX",

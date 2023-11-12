@@ -122,6 +122,8 @@ function EquipsPage() {
                       Dano: {json.damage}
                       <br></br>
                       Tipo de dano: {json.dtype}
+                      <br></br>
+                     {json.teste}
                       <br />
                     </div>
                   </div>
