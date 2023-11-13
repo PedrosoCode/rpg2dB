@@ -6,7 +6,7 @@ import { Navbar, Footer } from "../globals/globals"; // Caminho atualizado
 
 function HomePage() {
   return (
-    <div>
+    <div className="MainBG">
       <Navbar />
 
       <section className="section is-medium mainhead">
@@ -17,98 +17,117 @@ function HomePage() {
         </h2>
         <div className="overlay"></div>
       </section>
+
       <section className="section">
         <div className="box">
-          <h2>Simplificando mecânicas de jogo</h2>
-          <br></br>
-          <p>
-            Por meio dessa Homepage vou lhe apresentar o sistema, e te convencer
-            a dar uma chance
-            <br></br>
+          <div class="content is-large">
+            <h1>Seja bem vindo!</h1>
             <p>
-              Dessa forma, o RPG2D se distribui com bases no seguintes pilares
-              principais
+              Fique a vontade para fuçar por essa página, nela estou
+              documentando a maior parte das regras e recursos do meu sistema de
+              RPG
             </p>
-            <br></br>
-          </p>
-          <section className="section">
-            <div class="columns">
-              <div class="column col-atr">
-                Simplicidade
-                <ul>
-                  <p>
-                    O foco Principal do RPG2D, é ser um sistema simples, com
-                    coisas mais complexas sendo adicionadas a gosto da mesa
-                  </p>
-                </ul>
-              </div>
-              <div class="column col-atr">
-                Builds, e Flexibilidade
-                <ul>
-                  <p>
-                    No RPG2D não temos Classes, Pela Flexibilidade como você
-                    monta seus personagens, você tem controle total sobre como
-                    fazer sua build e estilo de jogo
-                  </p>
-                </ul>
-              </div>
-              <div class="column col-atr">
-                Atributos de força de vontade
-                <ul>
-                  <li>Constituição</li>
-                  <li>Carisma</li>
-                </ul>
-              </div>
-              <div class="column col-atr">
-                Atributos de Combate
-                <ul>
-                  <li>Armas de uma mão</li>
-                  <li>Armas de duas mãos</li>
-                  <li>Pontaria</li>
-                </ul>
-              </div>
-              <div class="column col-atr">
-                Atributos sem definição
-                <ul>
-                  <li>Força</li>
-                  <li>Destreza</li>
-                </ul>
-              </div>
+            <div class="content is-medium">
+              <h1>A favor da simplicidade</h1>
+              <p>
+                O sistema RPG2D é baseado essencialmente no uso de dois dados
+                para fazer as rolagens (dái vem o nome, RPG 2 D) <br></br>
+                As rolagens são feitas juntando o dado primário, D20. Com o seu
+                dado secundário, o dado secundário varia de acordo com seu nível
+                no atributo que será usado
+                <br></br>
+                <br></br>
+                Com base nesse conceito simples, unido a modificadores e perks,
+                o RPG2D se torna a base perfeita para um sistema simples,
+                Universal e adaptável
+              </p>
+
+              <table class="table is-bordered is-striped is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Rank do atributo</th>
+                    <th>Dado a ser utilizado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td>Nenhum</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1D4</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>1D6</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1D8</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>1D10</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>1D12</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>1D16</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>1D20</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>1D20 + 1</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>1D20 + 2</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>1D20 + 3</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </section>
+          </div>
+
+          <aside class="menu">
+            <p class="menu-label">Navegação</p>
+            <ul class="menu-list">
+              <li>
+                Links das páginas principais
+                <ul>
+                  <li>
+                    <Link to="/WorldPage">worldbuilding</Link>
+                  </li>
+                  <li>
+                    <Link to="/SheetsPage">Fichas</Link>
+                  </li>
+                  <li>
+                    <Link to="/EquipsPage">Items</Link>
+                  </li>
+                  <li>
+                    <Link to="/SpellsPage">SpellCasting</Link>
+                  </li>
+                  <li>
+                    <Link to="/PerksPage">Lista de Perks</Link>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </aside>
         </div>
       </section>
-      <h1>Página Inicial</h1>
-      <Link to="/WorldPage">
-        <br></br>
-        <button class="button is-large is-rounded is-success">
-          Acessar  worldbuilding
-        </button>
-      </Link>
+
       <br></br>
-      <Link to="/SheetsPage">
-        <button class="button is-large  is-rounded is-success">
-          Acessar página de Fichas
-        </button>
-      </Link>
-      <br></br>
-      <Link to="/EquipsPage">
-        <button class="button is-large  is-rounded is-success">
-          Acessar página de ítens
-        </button>
-      </Link>
-      <br></br>
-      <Link to="/SpellsPage">
-        <button class="button is-large  is-rounded is-success">
-          Acessar página de SpellCasting
-        </button>
-        </Link>
-              <br></br>
-      <Link to="/PerksPage">
-        <button class="button is-large  is-rounded is-success">
-          Acessar página de Perks
-        </button>
-      </Link>
       <br></br>
       <Footer />
     </div>

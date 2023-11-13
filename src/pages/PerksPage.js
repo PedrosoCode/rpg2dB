@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import spellsData from "../info/spells.json";
+import perksData from "../info/Perks.json";
 import { Navbar, Footer } from "../globals/globals";
 
 function Tags({ tags }) {
@@ -39,11 +39,11 @@ function PerksPage() {
     setFiltersActive(false);
   };
 
-  const filteredSpells = spellsData.filter((spell) => {
-    const nameMatch = spell.name.toLowerCase().includes(searchText.toLowerCase());
+  const filteredPerks = perksData.filter((perks) => {
+    const nameMatch = perks.name.toLowerCase().includes(searchText.toLowerCase());
     const tagsMatch =
       selectedTags.length === 0 ||
-      selectedTags.every((tag) => spell.tags.includes(tag));
+      selectedTags.every((tag) => perks.tags.includes(tag));
     return nameMatch && tagsMatch;
   });
 
@@ -92,27 +92,20 @@ function PerksPage() {
           )}
 
           <div className="columns is-multiline">
-            {filteredSpells.map((spell, index) => (
+            {filteredPerks.map((perks, index) => (
               <div className="column is-one-quarter" key={index}>
                 <div className="card equips-card">
                   <header className="card-header">
-                    <p className="card-header-title">{spell.name}</p>
+                    <p className="card-header-title">{perks.name}</p>
                   </header>
                   <div className="card-content">
                     <div className="content">
-                      <Tags tags={spell.tags} />
+                      <Tags tags={perks.tags} />
                       <br />
                       {/* Aqui vão os outros campos do seu arquivo JSON */}
-                      O atributo de acerto é {spell.atrAcerto}
-                      <br />O atributo Para Bonus de dano é {spell.atrBonus}
-                      <br />
-                      Lançamento: {spell.throw}
-                      <br />
-                      Dano: {spell.damage}
-                      <br />
-                      Tipo de dano: {spell.dtype}
-                      <br />
-                      {/* O restante dos campos */}
+                      {perks.name}
+                      <br></br>
+                      {perks.efeito}
                     </div>
                   </div>
                 </div>
