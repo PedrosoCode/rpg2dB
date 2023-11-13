@@ -1,0 +1,12 @@
+[
+  {
+    "name": "teste1",
+    "efeito": "teste1",
+    "tags": ["tag1", "Tag3"]
+  },
+  {
+    "name": "teste2",
+    "efeito": "teste2",
+    "tags": ["tag1", "Tag3"]
+  }
+]

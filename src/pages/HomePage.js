@@ -82,7 +82,7 @@ function HomePage() {
       <Link to="/WorldPage">
         <br></br>
         <button class="button is-large is-rounded is-success">
-          Acessar página de worldbuilding
+          Acessar  worldbuilding
         </button>
       </Link>
       <br></br>
@@ -94,12 +94,19 @@ function HomePage() {
       <br></br>
       <Link to="/EquipsPage">
         <button class="button is-large  is-rounded is-success">
-          Acessar página de ítens/equipamentos
+          Acessar página de ítens
         </button>
       </Link>
+      <br></br>
       <Link to="/SpellsPage">
         <button class="button is-large  is-rounded is-success">
           Acessar página de SpellCasting
+        </button>
+        </Link>
+              <br></br>
+      <Link to="/PerksPage">
+        <button class="button is-large  is-rounded is-success">
+          Acessar página de Perks
         </button>
       </Link>
       <br></br>

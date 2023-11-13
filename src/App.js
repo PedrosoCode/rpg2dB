@@ -10,6 +10,7 @@ import SheetsPage from './pages/SheetsPage';
 import EquipsPage from './pages/EquipsPage';
 import WorldPage from './pages/WorldPage';
 import SpellsPage from './pages/SpellsPage';
+import PerksPage from './pages/PerksPage'
 
 
 /* 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/EquipsPage" element={<EquipsPage />} />
         <Route path="/WorldPage" element={<WorldPage />} />
         <Route path="/SpellsPage" element={<SpellsPage />} />
+        <Route path="/PerksPage" element={<PerksPage />} />
       </Routes>
     </BrowserRouter>
   );
