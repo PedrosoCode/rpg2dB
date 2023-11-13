@@ -66,42 +66,92 @@ function EquipsPage() {
             onChange={handleSearchTextChange}
           />
 
-          {/* Botões de filtro de tags */}
+          
           <div>
+            {/* Começo de um botão de filtro de tags */}
             <button
-              onClick={() => handleTagSelect("tag1")}
+              onClick={() => handleTagSelect("padrao")}
               style={{
-                backgroundColor: selectedTags.includes("tag1")
+                backgroundColor: selectedTags.includes("padrao")
                   ? "green"
                   : "blue",
-                color: selectedTags.includes("tag1") ? "white" : "white",
+                color: selectedTags.includes("padrao") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
             >
-              Tag 1
+              <br></br>
+              Padrão
+            </button>
+            {/* fim de um botão de filtro de tags */}
+            <button
+              onClick={() => handleTagSelect("medieval")}
+              style={{
+                backgroundColor: selectedTags.includes("medieval")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("medieval") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Medieval
             </button>
             <button
-              onClick={() => handleTagSelect("tag2")}
+              onClick={() => handleTagSelect("moderno")}
               style={{
-                backgroundColor: selectedTags.includes("tag2")
+                backgroundColor: selectedTags.includes("moderno")
                   ? "green"
                   : "blue",
-                color: selectedTags.includes("tag2") ? "white" : "white",
+                color: selectedTags.includes("moderno") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
             >
-              Tag 2
+              <br></br>
+              Moderno
+            </button>
+            <button
+              onClick={() => handleTagSelect("espada")}
+              style={{
+                backgroundColor: selectedTags.includes("espada")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("espada") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Espadas
+            </button>
+            <button
+              onClick={() => handleTagSelect("adagas")}
+              style={{
+                backgroundColor: selectedTags.includes("adagas")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("adagas") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Adagas
             </button>
           </div>
 
           {/* Botão para limpar filtros */}
           {filtersActive && (
-            <button onClick={clearFilters}>Limpar Filtros</button>
+            <div><button onClick={clearFilters}>Limpar Filtros</button><br></br></div>
           )}
+          <br></br>
 
           <div className="columns is-multiline">
             {filteredWeapons.map((json, index) => (
