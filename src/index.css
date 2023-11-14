@@ -76,3 +76,8 @@ code {
   color: navy;
   font-weight: bold;
 }
+
+.equipsText {
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+}

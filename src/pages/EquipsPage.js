@@ -164,14 +164,15 @@ function EquipsPage() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      O atributo de acerto é {json.atrAcerto}
-                      <br></br>O atributo Para Bonus de dano é {json.atrBonus}
+                      <span className="equipsText">O atributo de acerto é </span> {json.atrAcerto}
                       <br></br>
-                      Lançamento: {json.throw}
+                      <span className="equipsText">O atributo Para Bonus de dano é </span>{json.atrBonus}
                       <br></br>
-                      Dano: {json.damage}
+                      <span className="equipsText">Lançamento: </span>{json.throw}
                       <br></br>
-                      Tipo de dano: {json.dtype}
+                      <span className="equipsText">Dano: </span>{json.damage}
+                      <br></br>
+                      <span className="equipsText">Tipo de dano: </span>{json.dtype}
                       <br></br>
                      {json.teste}
                       <br />
