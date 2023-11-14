@@ -26,7 +26,9 @@ function PerksPage() {
 
   const handleTagSelect = (tag) => {
     if (selectedTags.includes(tag)) {
-      setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
+      setSelectedTags(
+        selectedTags.filter((selectedTag) => selectedTag !== tag)
+      );
     } else {
       setSelectedTags([...selectedTags, tag]);
     }
@@ -40,7 +42,9 @@ function PerksPage() {
   };
 
   const filteredPerks = perksData.filter((perks) => {
-    const nameMatch = perks.name.toLowerCase().includes(searchText.toLowerCase());
+    const nameMatch = perks.name
+      .toLowerCase()
+      .includes(searchText.toLowerCase());
     const tagsMatch =
       selectedTags.length === 0 ||
       selectedTags.every((tag) => perks.tags.includes(tag));
@@ -59,30 +63,37 @@ function PerksPage() {
             value={searchText}
             onChange={handleSearchTextChange}
           />
-
           <div>
+            <br></br>
             <button
               onClick={() => handleTagSelect("tag1")}
               style={{
-                backgroundColor: selectedTags.includes("tag1") ? "green" : "blue",
+                backgroundColor: selectedTags.includes("tag1")
+                  ? "green"
+                  : "blue",
                 color: selectedTags.includes("tag1") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
+              
             >
+              <br></br>
               Tag 1
             </button>
             <button
               onClick={() => handleTagSelect("tag2")}
               style={{
-                backgroundColor: selectedTags.includes("tag2") ? "green" : "blue",
+                backgroundColor: selectedTags.includes("tag2")
+                  ? "green"
+                  : "blue",
                 color: selectedTags.includes("tag2") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
             >
+              <br></br>
               Tag 2
             </button>
           </div>
@@ -90,7 +101,7 @@ function PerksPage() {
           {filtersActive && (
             <button onClick={clearFilters}>Limpar Filtros</button>
           )}
-
+          <br></br>
           <div className="columns is-multiline">
             {filteredPerks.map((perks, index) => (
               <div className="column is-one-quarter" key={index}>
@@ -103,9 +114,9 @@ function PerksPage() {
                       <Tags tags={perks.tags} />
                       <br />
                       {/* Aqui vão os outros campos do seu arquivo JSON */}
-                      {perks.name}
+                      <span className="perksName">{perks.name}</span>
                       <br></br>
-                      {perks.efeito}
+                      <span className="perksEffect">{perks.efeito}</span>
                     </div>
                   </div>
                 </div>

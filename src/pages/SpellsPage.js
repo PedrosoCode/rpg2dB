@@ -57,6 +57,7 @@ function SpellsPage() {
       <h1>Página de SpellsPage</h1>
       <section className="section">
         <div className="box">
+          <br></br>
           <input
             type="text"
             placeholder="Buscar por nome"
@@ -65,6 +66,7 @@ function SpellsPage() {
           />
 
           <div>
+            <br></br>
             <button
               onClick={() => handleTagSelect("tag1")}
               style={{
@@ -77,6 +79,7 @@ function SpellsPage() {
                 marginRight: "5px",
               }}
             >
+              <br></br>
               Tag 1
             </button>
             <button
@@ -91,6 +94,7 @@ function SpellsPage() {
                 marginRight: "5px",
               }}
             >
+              <br></br>
               Tag 2
             </button>
           </div>
@@ -98,7 +102,7 @@ function SpellsPage() {
           {filtersActive && (
             <button onClick={clearFilters}>Limpar Filtros</button>
           )}
-
+          <br></br>
           <div className="columns is-multiline">
             {filteredSpells.map((spell, index) => (
               <div className="column is-one-quarter" key={index}>
@@ -111,25 +115,34 @@ function SpellsPage() {
                       <Tags tags={spell.tags} />
                       <br />
                       {/* Aqui vão os outros campos do arquivo JSON */}
-                      Requisitos:  {spell.requisitos}
-                      <br /><span className="spellDesc">Tempo de Casting:</span> 
-                            <span className="spellContent">{spell.casting}</span>
+                      Requisitos: {spell.requisitos}
                       <br />
-                      alcance: {spell.reach}
+                      <span className="spellsText">Tempo de Casting: </span>
+                      <span className="spellsJson">{spell.casting}</span>
                       <br />
-                      duração: {spell.duration}
+                      <span className="spellsText">alcance: </span>
+                      <span className="spellsJson">{spell.reach}</span>
                       <br />
-                      utiliza concentração? {spell.concen}
+                      <span className="spellsText">duração: </span>
+                      <span className="spellsJson">{spell.duration}</span>
                       <br />
-                      efeito: {spell.effect}
+                      <span className="spellsText">utiliza concentração? </span>
+                      <span className="spellsJson">{spell.concen}</span>
                       <br />
-                      efeito adicional 1: {spell.pluseff1}
+                      <span className="spellsText">efeito: </span>
+                      <span className="spellsJson">{spell.effect}</span>
                       <br />
-                      efeito adicional 2: {spell.pluseff2}
+                      <span className="spellsText">efeito adicional 1: </span>
+                      <span className="spellsJson">{spell.pluseff1}</span>
                       <br />
-                      efeito adicional 3: {spell.pluseff3}
+                      <span className="spellsText">efeito adicional 2: </span>
+                      <span className="spellsJson">{spell.pluseff2}</span>
                       <br />
-                      efeito adicional 4: {spell.pluseff4}
+                      <span className="spellsText">efeito adicional 3: </span>
+                      <span className="spellsJson">{spell.pluseff3}</span>
+                      <br />
+                      <span className="spellsText">efeito adicional 4: </span>
+                      <span className="spellsJson">{spell.pluseff4}</span>
                       <br />
                     </div>
                   </div>

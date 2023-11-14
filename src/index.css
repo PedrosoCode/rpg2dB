@@ -81,3 +81,31 @@ code {
   font-weight: bold;
   color: rgb(78, 78, 78);
 }
+
+.equipsJson {
+  color: rgb(0, 38, 255);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.spellsText {
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+}
+
+.spellsJson {
+  color: rgb(0, 38, 255);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.perksName {
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+}
+
+.perksEffect {
+  color: rgb(0, 38, 255);
+  font-style: italic;
+  font-weight: bolder;
+}

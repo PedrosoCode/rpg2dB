@@ -58,6 +58,7 @@ function EquipsPage() {
       <h1>Página de EquipsPage</h1>
       <section className="section">
         <div className="box">
+          <br></br>
           {/* Campo de pesquisa */}
           <input
             type="text"
@@ -66,8 +67,8 @@ function EquipsPage() {
             onChange={handleSearchTextChange}
           />
 
-          
           <div>
+            <br></br>
             {/* Começo de um botão de filtro de tags */}
             <button
               onClick={() => handleTagSelect("padrao")}
@@ -149,7 +150,10 @@ function EquipsPage() {
 
           {/* Botão para limpar filtros */}
           {filtersActive && (
-            <div><button onClick={clearFilters}>Limpar Filtros</button><br></br></div>
+            <div>
+              <button onClick={clearFilters}>Limpar Filtros</button>
+              <br></br>
+            </div>
           )}
           <br></br>
 
@@ -164,17 +168,26 @@ function EquipsPage() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="equipsText">O atributo de acerto é </span> {json.atrAcerto}
+                      <span className="equipsText">
+                        O atributo de acerto é{" "}
+                      </span>{" "}
+                      <span className="equipsJson">{json.atrAcerto}</span>
                       <br></br>
-                      <span className="equipsText">O atributo Para Bonus de dano é </span>{json.atrBonus}
+                      <span className="equipsText">
+                        O atributo Para Bonus de dano é
+                      </span>{" "}
+                      <span className="equipsJson">{json.atrBonus}</span>
                       <br></br>
-                      <span className="equipsText">Lançamento: </span>{json.throw}
+                      <span className="equipsText">Lançamento: </span>
+                      <span className="equipsJson">{json.throw}</span>
                       <br></br>
-                      <span className="equipsText">Dano: </span>{json.damage}
+                      <span className="equipsText">Dano: </span>
+                      <span className="equipsJson">{json.damage}</span>
                       <br></br>
-                      <span className="equipsText">Tipo de dano: </span>{json.dtype}
+                      <span className="equipsText">Tipo de dano: </span>
+                      <span className="equipsJson">{json.dtype}</span>
                       <br></br>
-                     {json.teste}
+                      {json.teste}
                       <br />
                     </div>
                   </div>
