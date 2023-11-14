@@ -1,68 +1,18 @@
 function Navbar() {
-    // Conteúdo do seu Navbar
-    return (
-
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://localhost:3000">
-      <img src="https://cdn-icons-png.flaticon.com/512/6729/6729800.png" width="30" height="30"></img>
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Documentation
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider"></hr>
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
+  // Conteúdo do seu Navbar
+  return (
+    <div className="mainNavbar">
+      <ul>
+        <li>
+          <a href="https://react.gabrielribeiropedroso.com.br">Home</a>
+        </li>
+        <li>
+          <a href="https://github.com/PedrosoCode/rpg2dB">acompanhe!</a>
+        </li>
+        <li style={{ float: 'right' }}><a className="active" href="https://gabrielribeiropedroso.com.br">Hire me Please!</a></li>
+      </ul>
     </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Meu currículo</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-    )
+  );
 }
 
 export default Navbar;

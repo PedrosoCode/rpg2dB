@@ -55,7 +55,6 @@ function EquipsPage() {
   return (
     <div>
       <Navbar />
-      <h1>Página de EquipsPage</h1>
       <section className="section">
         <div className="box">
           <br></br>

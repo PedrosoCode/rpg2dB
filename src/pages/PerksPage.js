@@ -54,7 +54,6 @@ function PerksPage() {
   return (
     <div>
       <Navbar />
-      <h1>Página de PerksPage</h1>
       <section className="section">
         <div className="box">
           <input

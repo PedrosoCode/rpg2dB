@@ -100,6 +100,7 @@ code {
 }
 
 .perksName {
+  font-size: larger;
   font-weight: bold;
   color: rgb(78, 78, 78);
 }
@@ -108,4 +109,33 @@ code {
   color: rgb(0, 38, 255);
   font-style: italic;
   font-weight: bolder;
+}
+
+.mainNavbar ul {
+  position: sticky;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.mainNavbar li {
+  float: left;
+}
+
+.mainNavbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mainNavbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.mainNavbar .active {
+  background-color: #04AA6D;
 }
