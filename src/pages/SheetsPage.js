@@ -1,18 +1,119 @@
 // ContactPage.js
-import React from "react";
-import JsonWeapons from "../info/npcs.json";
+import React, { useState } from "react";
+import JsonNpcs from "../info/npcs.json";
 import { Navbar, Footer } from "../globals/globals";
 
+
+function Tags({ tags }) {
+  return (
+    <div>
+      {tags.map((tag, index) => (
+        <span key={index} className="tag">
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 function SheetsPage() {
+  const [searchText, setSearchText] = useState("");
+  const [selectedTags, setSelectedTags] = useState([]);
+  const [filtersActive, setFiltersActive] = useState(false);
+
+  const handleSearchTextChange = (event) => {
+    setSearchText(event.target.value);
+    setFiltersActive(true);
+  };
+
+  const handleTagSelect = (tag) => {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(
+        selectedTags.filter((selectedTag) => selectedTag !== tag)
+      );
+    } else {
+      setSelectedTags([...selectedTags, tag]);
+    }
+    setFiltersActive(true);
+  };
+
+  const clearFilters = () => {
+    setSearchText("");
+    setSelectedTags([]);
+    setFiltersActive(false);
+  };
+
+  const filteredNpcs = JsonNpcs.filter((Npcs) => {
+    const nameMatch = Npcs.name
+      .toLowerCase()
+      .includes(searchText.toLowerCase());
+    const tagsMatch =
+      selectedTags.length === 0 ||
+      selectedTags.every((tag) => Npcs.tags.includes(tag));
+    return nameMatch && tagsMatch;
+  });
   return (
     <div>
       <Navbar></Navbar>
+      <br></br>
+      {/* Campo de pesquisa */}
+      <input
+        type="text"
+        placeholder="Buscar por nome"
+        value={searchText}
+        onChange={handleSearchTextChange}
+      />
+
+      <div>
+        <br></br>
+        {/* Começo de um botão de filtro de tags */}
+        <button
+          onClick={() => handleTagSelect("padrao")}
+          style={{
+            backgroundColor: selectedTags.includes("padrao") ? "green" : "blue",
+            color: selectedTags.includes("padrao") ? "white" : "white",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            marginRight: "5px",
+          }}
+        >
+          <br></br>
+          Padrão
+        </button>
+        {/* fim de um botão de filtro de tags */}
+        <button
+          onClick={() => handleTagSelect("medieval")}
+          style={{
+            backgroundColor: selectedTags.includes("medieval")
+              ? "green"
+              : "blue",
+            color: selectedTags.includes("medieval") ? "white" : "white",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            marginRight: "5px",
+          }}
+        >
+          <br></br>
+          Medieval
+        </button>
+      </div>
+
+      {/* Botão para limpar filtros */}
+      {filtersActive && (
+        <div>
+          <button onClick={clearFilters}>Limpar Filtros</button>
+          <br></br>
+        </div>
+      )}
+      <br></br>
+
       <section className="section">
         <div className="box">
           <div className="columns is-multiline">
-            <div className="column is-half">
+          {filteredNpcs.map((json, index) => (
+            <div className="column is-half" key={index}>
               <div className="box">
-                Nome do personagem
+                Nome do personagem {json.name} {json.efeito} {json.tags}
                 <br></br>
                 Dado de vida:
                 <br></br>
@@ -75,8 +176,10 @@ function SheetsPage() {
                 <br></br>
                 backstory
               </div>
-            </div>
+            </div>        
+                ))}
             {/* fim do card examplo*/}
+
           </div>
         </div>
       </section>
