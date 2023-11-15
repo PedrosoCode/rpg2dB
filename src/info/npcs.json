@@ -1,12 +1,33 @@
 [
   {
-    "name": "teste1",
-    "efeito": "teste1",
-    "tags": ["tag1", "Tag3"]
-  },
-  {
-    "name": "teste2",
-    "efeito": "teste2",
-    "tags": ["tag1", "Tag3"]
+    "name": "alguem",
+    "lifeDice": "1d10",
+    "hp": "18",
+    "mp": "999",
+    "atrSpell": "Inteligência",
+    "desloc": "35ft",
+    "armor": "placas de aço",
+    "armDef": "16",
+    "armAbsor": "3",
+    "movPenalt": "-10ft",
+
+    "for": "1d20",
+    "des": "1d20+3",
+    "int": "1d16",
+    "conh": "1d4",
+    "sab": "1d4",
+    "con": "1d16",
+    "perc": "1d8",
+    "cari": "1d6",
+    "oneH": "1d16",
+    "twoH": "1d16",
+    "furt": "1d6",
+    "pont": "1d12",
+
+    "perk": "PLot armor",
+    "spellList": "",
+    "weapons": "",
+    "inventory": "",
+    "backstory": ""
   }
 ]
