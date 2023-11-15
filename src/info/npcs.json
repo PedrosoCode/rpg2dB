@@ -1,18 +1,12 @@
 [
-    {
-      "name": "Bandit",
-      "desc": "Um bandido comum para você usar no RPG",
-      "link": "https://www.exemplo.com/json1"
-    },
-    {
-      "title": "JSON 2",
-      "description": "Este é o JSON 2",
-      "link": "https://www.exemplo.com/json2"
-    },
-    {
-      "title": "JSON 3",
-      "description": "Este é o JSON 3",
-      "link": "https://www.exemplo.com/json3"
-    }
-  ]
-  
+  {
+    "name": "teste1",
+    "efeito": "teste1",
+    "tags": ["tag1", "Tag3"]
+  },
+  {
+    "name": "teste2",
+    "efeito": "teste2",
+    "tags": ["tag1", "Tag3"]
+  }
+]
