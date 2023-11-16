@@ -112,7 +112,16 @@ function HomePage() {
                     <Link to="/SheetsPage">Fichas</Link>
                   </li>
                   <li>
-                    <Link to="/EquipsPage">Items</Link>
+                    <Link to="/EquipsPage">Armas Brancas</Link>
+                  </li>
+                  <li>
+                    <Link to="/EquipsPage">Armas à distância</Link>
+                  </li>
+                  <li>
+                    <Link to="/EquipsPage">Armaduras</Link>
+                  </li>
+                  <li>
+                    <Link to="/EquipsPage">items</Link>
                   </li>
                   <li>
                     <Link to="/SpellsPage">SpellCasting</Link>
