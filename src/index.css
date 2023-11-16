@@ -88,6 +88,17 @@ code {
   font-weight: bolder;
 }
 
+.npcText {
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+}
+
+.npcJson {
+  color: rgb(0, 38, 255);
+  font-style: italic;
+  font-weight: bolder;
+}
+
 .spellsText {
   font-weight: bold;
   color: rgb(78, 78, 78);

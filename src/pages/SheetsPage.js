@@ -114,25 +114,37 @@ function SheetsPage() {
             {filteredNpcs.map((json, index) => (
               <div className="column is-half" key={index}>
                 <div className="box">
-                  Nome do personagem {json.name} 
+                  <Tags tags={json.tags} />
+                  <br />
+                  <span className="npcText">Nome do personagem </span>
+                  <span className="npcJson">{json.name}</span>
                   <br></br>
-                  Dado de vida: {json.lifeDice} 
+                  <span className="npcText">Dado de vida: </span>
+                  <span className="npcJson">{json.lifeDice}</span>
                   <br></br>
-                  HP: {json.hp} 
+                  <span className="npcText">HP: </span>
+                  <span className="npcJson">{json.hp}</span>
                   <br></br>
-                  Mana: {json.mp} 
+                  <span className="npcText">Mana: </span>
+                  <span className="npcJson">{json.mp}</span>
                   <br></br>
-                  atributo de Spellcasting: {json.atrSpell} 
+                  <span className="npcText">atributo de Spellcasting: </span>
+                  <span className="npcJson">{json.atrSpell}</span>
                   <br></br>
-                  Deslocamento: {json.desloc} 
+                  <span className="npcText">Deslocamento: </span>
+                  <span className="npcJson">{json.desloc}</span>
                   <br></br>
-                  Armadura: {json.armor} 
+                  <span className="npcText">Armadura: </span>
+                  <span className="npcJson">{json.armor}</span>
                   <br></br>
-                  Defesa: {json.armDef} 
+                  <span className="npcText">Defesa: </span>
+                  <span className="npcJson">{json.armDef}</span>
                   <br></br>
-                  Absorção: {json.armAbsor} 
+                  <span className="npcText">Absorção: </span>
+                  <span className="npcJson">{json.armAbsor}</span>
                   <br></br>
-                  Penalidade de movimentação: {json.movPenalt} 
+                  <span className="npcText">Penalidade de movimentação: </span>
+                  <span className="npcJson">{json.movPenalt}</span>
                   <br></br>
                   <table class="table is-bordered is-striped is-hoverable">
                     <thead>
@@ -167,15 +179,20 @@ function SheetsPage() {
                       </tr>
                     </tbody>
                   </table>
-                  Vantagens/perks {json.perk} 
+                  <span className="npcText">Vantagens/perks </span> 
+                  <span className="npcJson">{json.perk}</span>
                   <br></br>
-                  Spelllist {json.spellList} 
+                  <span className="npcText">Spell List </span> 
+                  <span className="npcJson">{json.spellList}</span>
                   <br></br>
-                  Armas {json.weapons} 
+                  <span className="npcText">Armas </span> 
+                  <span className="npcJson">{json.weapons}</span>
                   <br></br>
-                  inventário {json.inventory} 
+                  <span className="npcText">inventário </span> 
+                  <span className="npcJson">{json.inventory}</span>
                   <br></br>
-                  backstory {json.backstory} 
+                  <span className="npcText">backstory </span> 
+                  <span className="npcJson">{json.backstory}</span>
                 </div>
               </div>
             ))}
