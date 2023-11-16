@@ -115,10 +115,10 @@ function HomePage() {
                     <Link to="/EquipsPage">Armas Brancas</Link>
                   </li>
                   <li>
-                    <Link to="/EquipsPage">Armas à distância</Link>
+                    <Link to="/RangedWeapons">Armas à distância</Link>
                   </li>
                   <li>
-                    <Link to="/EquipsPage">Armaduras</Link>
+                    <Link to="/ArmorsPage">Armaduras</Link>
                   </li>
                   <li>
                     <Link to="/EquipsPage">items</Link>
