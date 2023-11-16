@@ -2,11 +2,11 @@
   {
     "name": "teste1",
     "efeito": "teste1",
-    "tags": ["tag1", "Tag3"]
+    "tags": ["perc", "cari"]
   },
   {
     "name": "teste2",
     "efeito": "teste2",
-    "tags": ["tag1", "Tag3"]
+    "tags": ["int", "perc"]
   }
 ]

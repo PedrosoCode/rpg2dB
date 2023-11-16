@@ -65,35 +65,200 @@ function PerksPage() {
           <div>
             <br></br>
             <button
-              onClick={() => handleTagSelect("tag1")}
+              onClick={() => handleTagSelect("padrao")}
               style={{
-                backgroundColor: selectedTags.includes("tag1")
+                backgroundColor: selectedTags.includes("padrao")
                   ? "green"
                   : "blue",
-                color: selectedTags.includes("tag1") ? "white" : "white",
+                color: selectedTags.includes("padrao") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
-              
             >
               <br></br>
-              Tag 1
+              Padrão
             </button>
             <button
-              onClick={() => handleTagSelect("tag2")}
+              onClick={() => handleTagSelect("for")}
               style={{
-                backgroundColor: selectedTags.includes("tag2")
+                backgroundColor: selectedTags.includes("for")
                   ? "green"
                   : "blue",
-                color: selectedTags.includes("tag2") ? "white" : "white",
+                color: selectedTags.includes("for") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
             >
               <br></br>
-              Tag 2
+              Força
+            </button>
+
+            <button
+              onClick={() => handleTagSelect("des")}
+              style={{
+                backgroundColor: selectedTags.includes("des")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("des") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Destreza
+            </button>
+            <button
+              onClick={() => handleTagSelect("int")}
+              style={{
+                backgroundColor: selectedTags.includes("int")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("int") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Inteligência
+            </button>
+            <button
+              onClick={() => handleTagSelect("conh")}
+              style={{
+                backgroundColor: selectedTags.includes("conh")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("conh") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Conhecimento
+            </button>
+            <button
+              onClick={() => handleTagSelect("sab")}
+              style={{
+                backgroundColor: selectedTags.includes("sab")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("sab") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Sabedoria
+            </button>
+            <button
+              onClick={() => handleTagSelect("con")}
+              style={{
+                backgroundColor: selectedTags.includes("con")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("con") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Constituição
+            </button>
+            <button
+              onClick={() => handleTagSelect("perc")}
+              style={{
+                backgroundColor: selectedTags.includes("perc")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("perc") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Percepção
+            </button>
+            <button
+              onClick={() => handleTagSelect("cari")}
+              style={{
+                backgroundColor: selectedTags.includes("cari")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("cari") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Carisma
+            </button>
+            <button
+              onClick={() => handleTagSelect("oneH")}
+              style={{
+                backgroundColor: selectedTags.includes("oneH")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("oneH") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Armas de uma mão
+            </button>
+            <button
+              onClick={() => handleTagSelect("twoH")}
+              style={{
+                backgroundColor: selectedTags.includes("twoH")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("twoH") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Armas de duas mãos
+            </button>
+            <button
+              onClick={() => handleTagSelect("furt")}
+              style={{
+                backgroundColor: selectedTags.includes("furt")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("furt") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Furtividade
+            </button>
+            <button
+              onClick={() => handleTagSelect("pont")}
+              style={{
+                backgroundColor: selectedTags.includes("pont")
+                  ? "green"
+                  : "blue",
+                color: selectedTags.includes("pont") ? "white" : "white",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                marginRight: "5px",
+              }}
+            >
+              <br></br>
+              Pontaria
             </button>
           </div>
 
