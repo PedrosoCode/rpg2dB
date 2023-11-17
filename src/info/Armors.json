@@ -1,0 +1,17 @@
+[
+  {
+    "name": "teste1",
+    "ArmType": "ArmType",
+    "defense": "teste2",
+    "absor": "teste3",
+    "movPenalt": "damage",
+    "vant": "teste4",
+    "desvant": "teste5",
+    "tags": ["perc", "cari"]
+  },
+  {
+    "name": "teste2",
+    "efeito": "teste2",
+    "tags": ["int", "perc"]
+  }
+]

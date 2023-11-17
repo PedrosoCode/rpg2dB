@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import JsonWeapons from "../info/weapons.json";
+import JsonWeapons from "../info/Armors.json";
 import { Navbar, Footer } from "../globals/globals";
 
 // Componente Tags para exibir as tags de uma arma
@@ -167,26 +167,27 @@ function ArmorsPage() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="equipsText">
-                        O atributo de acerto é{" "}
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrAcerto}</span>
+                      <span className="equipsText">Nome: </span>
+                      <span className="equipsJson">{json.name}</span>
                       <br></br>
-                      <span className="equipsText">
-                        O atributo Para Bonus de dano é
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrBonus}</span>
+                      <span className="equipsText">Tipo: </span>
+                      <span className="equipsJson">{json.ArmType}</span>
                       <br></br>
-                      <span className="equipsText">Lançamento: </span>
-                      <span className="equipsJson">{json.throw}</span>
+                      <span className="equipsText">Defesa: </span>
+                      <span className="equipsJson">{json.defense}</span>
                       <br></br>
-                      <span className="equipsText">Dano: </span>
-                      <span className="equipsJson">{json.damage}</span>
+                      <span className="equipsText">Absorção: </span>
+                      <span className="equipsJson">{json.absor}</span>
                       <br></br>
-                      <span className="equipsText">Tipo de dano: </span>
-                      <span className="equipsJson">{json.dtype}</span>
+                      <span className="equipsText">Penalidade de movimentação </span>
+                      <span className="equipsJson">{json.movPenalt}</span>
                       <br></br>
-                      {json.teste}
+                      <span className="equipsText">vantagens: </span>
+                      <span className="equipsJson">{json.vant}</span>
+                      <br></br>
+                      <span className="equipsText">Desvatagens: </span>
+                      <span className="equipsJson">{json.desvant}</span>
+                      <br></br>
                       <br />
                     </div>
                   </div>

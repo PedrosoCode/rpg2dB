@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import JsonWeapons from "../info/weapons.json";
+import JsonWeapons from "../info/rangedWeapons.json";
 import { Navbar, Footer } from "../globals/globals";
 
 // Componente Tags para exibir as tags de uma arma
@@ -116,34 +116,34 @@ function RangedWeapons() {
               Moderno
             </button>
             <button
-              onClick={() => handleTagSelect("espada")}
+              onClick={() => handleTagSelect("arco")}
               style={{
-                backgroundColor: selectedTags.includes("espada")
+                backgroundColor: selectedTags.includes("arco")
                   ? "green"
                   : "blue",
-                color: selectedTags.includes("espada") ? "white" : "white",
+                color: selectedTags.includes("arco") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
             >
               <br></br>
-              Espadas
+              Arcos
             </button>
             <button
-              onClick={() => handleTagSelect("adagas")}
+              onClick={() => handleTagSelect("pistola")}
               style={{
-                backgroundColor: selectedTags.includes("adagas")
+                backgroundColor: selectedTags.includes("pistola")
                   ? "green"
                   : "blue",
-                color: selectedTags.includes("adagas") ? "white" : "white",
+                color: selectedTags.includes("pistola") ? "white" : "white",
                 border: "1px solid #ccc",
                 borderRadius: "4px",
                 marginRight: "5px",
               }}
             >
               <br></br>
-              Adagas
+              pistola
             </button>
           </div>
 
@@ -167,24 +167,28 @@ function RangedWeapons() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="equipsText">
-                        O atributo de acerto é{" "}
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrAcerto}</span>
-                      <br></br>
-                      <span className="equipsText">
-                        O atributo Para Bonus de dano é
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrBonus}</span>
-                      <br></br>
-                      <span className="equipsText">Lançamento: </span>
-                      <span className="equipsJson">{json.throw}</span>
+                      <span className="equipsText">Alcance: </span>
+                      <span className="equipsJson">{json.reach}</span>
                       <br></br>
                       <span className="equipsText">Dano: </span>
                       <span className="equipsJson">{json.damage}</span>
                       <br></br>
                       <span className="equipsText">Tipo de dano: </span>
                       <span className="equipsJson">{json.dtype}</span>
+                      <br></br>
+                      <span className="equipsText">Rolagem: </span>
+                      <span className="equipsJson">{json.roll}</span>
+                      <br></br>
+                      <span className="equipsText">Cadência: </span>
+                      <span className="equipsJson">{json.fireRate}</span>
+                      <br></br>
+                      <span className="equipsText">Capacidade: </span>
+                      <span className="equipsJson">{json.size}</span>
+                      <br></br>
+                      <span className="equipsText">Tempo de recarregar: </span>
+                      <span className="equipsJson">{json.reload}</span>
+                      <br></br>
+
                       <br></br>
                       {json.teste}
                       <br />

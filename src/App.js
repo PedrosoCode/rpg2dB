@@ -13,6 +13,7 @@ import SpellsPage from './pages/SpellsPage';
 import PerksPage from './pages/PerksPage'
 import RangedWeapons from './pages/RangedWeapons';
 import ArmorsPage from './pages/ArmorsPage';
+import ThingsPage from './pages/ThingsPage';
 
 
 /* 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/PerksPage" element={<PerksPage />} />
         <Route path="/RangedWeapons" element={<RangedWeapons />} />
         <Route path="/ArmorsPage" element={<ArmorsPage />} />
+        <Route path="/ThingsPage" element={<ThingsPage />} />
       </Routes>
     </BrowserRouter>
   );

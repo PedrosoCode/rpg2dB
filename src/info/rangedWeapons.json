@@ -1,0 +1,18 @@
+[
+  {
+    "name": "teste1",
+    "reach":"teste2",
+    "damage": "teste3",
+    "dtype":"damage",
+    "roll":"teste4",
+    "fireRate":"teste5",
+    "size":"teste6",
+    "reload":"teste7",
+    "tags": ["perc", "cari"]
+  },
+  {
+    "name": "teste2",
+    "efeito": "teste2",
+    "tags": ["int", "perc"]
+  }
+]

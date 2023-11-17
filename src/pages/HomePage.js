@@ -121,7 +121,7 @@ function HomePage() {
                     <Link to="/ArmorsPage">Armaduras</Link>
                   </li>
                   <li>
-                    <Link to="/EquipsPage">items</Link>
+                    <Link to="/ThingsPage">items</Link>
                   </li>
                   <li>
                     <Link to="/SpellsPage">SpellCasting</Link>
