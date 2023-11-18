@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import JsonWeapons from "../info/weapons.json";
+import JsonThings from "../info/things.json";
 import { Navbar, Footer } from "../globals/globals";
 
 // Componente Tags para exibir as tags de uma arma
@@ -42,7 +42,7 @@ function ThingsPage() {
     setFiltersActive(false);
   };
 
-  const filteredWeapons = JsonWeapons.filter((weapon) => {
+  const filteredThings = JsonThings.filter((weapon) => {
     const nameMatch = weapon.name
       .toLowerCase()
       .includes(searchText.toLowerCase());
@@ -157,7 +157,7 @@ function ThingsPage() {
           <br></br>
 
           <div className="columns is-multiline">
-            {filteredWeapons.map((json, index) => (
+            {filteredThings.map((json, index) => (
               <div className="column is-one-quarter" key={index}>
                 <div className="card equips-card">
                   <header className="card-header">
@@ -167,26 +167,22 @@ function ThingsPage() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="equipsText">
-                        O atributo de acerto é{" "}
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrAcerto}</span>
+                      <span className="equipsText">Nome: </span>
+                      <span className="equipsJson">{json.name}</span>
                       <br></br>
-                      <span className="equipsText">
-                        O atributo Para Bonus de dano é
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrBonus}</span>
+                      <span className="equipsText">Tipo: </span>
+                      <span className="equipsJson">{json.type}</span>
                       <br></br>
-                      <span className="equipsText">Lançamento: </span>
-                      <span className="equipsJson">{json.throw}</span>
+                      <span className="equipsText">custo: </span>
+                      <span className="equipsJson">{json.cost}</span>
                       <br></br>
-                      <span className="equipsText">Dano: </span>
-                      <span className="equipsJson">{json.damage}</span>
+                      <span className="equipsText">Peso: </span>
+                      <span className="equipsJson">{json.weight}</span>
                       <br></br>
-                      <span className="equipsText">Tipo de dano: </span>
-                      <span className="equipsJson">{json.dtype}</span>
+                      <span className="equipsText">Raridade: </span>
+                      <span className="equipsJson">{json.rarity}</span>
                       <br></br>
-                      {json.teste}
+
                       <br />
                     </div>
                   </div>

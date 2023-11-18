@@ -1,0 +1,15 @@
+[
+  {
+    "name": "teste3",
+    "type": "teste2",
+    "cost":"olá",
+    "weight":"olá",
+    "rarity":"olá",
+    "tags": ["taggg", "toggle"]
+  },
+  {
+    "name": "teste2",
+    "efeito": "teste2",
+    "tags": ["int", "perc"]
+  }
+]
