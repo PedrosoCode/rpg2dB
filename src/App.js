@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import TestPage from './pages/TestPage';
 import './bulma/css/bulma.min.css';
-import './index.css';
+import './index.scss';
 import SheetsPage from './pages/SheetsPage';
 import EquipsPage from './pages/EquipsPage';
 import WorldPage from './pages/WorldPage';
