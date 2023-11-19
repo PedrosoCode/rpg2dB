@@ -167,24 +167,20 @@ function EquipsPage() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="equipsText">
-                        O atributo de acerto é{" "}
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrAcerto}</span>
+                      <span className="cardDesc"></span>
+                      <span className="cardContent">{json.atrAcerto}</span>
                       <br></br>
-                      <span className="equipsText">
-                        O atributo Para Bonus de dano é
-                      </span>{" "}
-                      <span className="equipsJson">{json.atrBonus}</span>
+                      <span className="cardDesc">O atributo Para Bonus de dano é</span>
+                      <span className="cardContent">{json.atrBonus}</span>
                       <br></br>
-                      <span className="equipsText">Lançamento: </span>
-                      <span className="equipsJson">{json.throw}</span>
+                      <span className="cardDesc">Lançamento: </span>
+                      <span className="cardContent">{json.throw}</span>
                       <br></br>
-                      <span className="equipsText">Dano: </span>
-                      <span className="equipsJson">{json.damage}</span>
+                      <span className="cardDesc">Dano: </span>
+                      <span className="cardContent">{json.damage}</span>
                       <br></br>
-                      <span className="equipsText">Tipo de dano: </span>
-                      <span className="equipsJson">{json.dtype}</span>
+                      <span className="cardDesc">Tipo de dano: </span>
+                      <span className="cardContent">{json.dtype}</span>
                       <br></br>
                       {json.teste}
                       <br />

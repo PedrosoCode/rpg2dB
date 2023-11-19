@@ -119,29 +119,29 @@ function SpellsPage() {
                       <span className="cardDesc">Tempo de Casting: </span>
                       <span className="cardContent">{spell.casting}</span>
                       <br />
-                      <span className="spellsText">alcance: </span>
-                      <span className="spellsJson">{spell.reach}</span>
+                      <span className="cardDesc">alcance: </span>
+                      <span className="cardContent">{spell.reach}</span>
                       <br />
-                      <span className="spellsText">duração: </span>
-                      <span className="spellsJson">{spell.duration}</span>
+                      <span className="cardDesc">duração: </span>
+                      <span className="cardContent">{spell.duration}</span>
                       <br />
-                      <span className="spellsText">utiliza concentração? </span>
-                      <span className="spellsJson">{spell.concen}</span>
+                      <span className="cardDesc">utiliza concentração? </span>
+                      <span className="cardContent">{spell.concen}</span>
                       <br />
-                      <span className="spellsText">efeito: </span>
-                      <span className="spellsJson">{spell.effect}</span>
+                      <span className="cardDesc">efeito: </span>
+                      <span className="cardContent">{spell.effect}</span>
                       <br />
-                      <span className="spellsText">efeito adicional 1: </span>
-                      <span className="spellsJson">{spell.pluseff1}</span>
+                      <span className="cardDesc">efeito adicional 1: </span>
+                      <span className="cardContent">{spell.pluseff1}</span>
                       <br />
-                      <span className="spellsText">efeito adicional 2: </span>
-                      <span className="spellsJson">{spell.pluseff2}</span>
+                      <span className="cardDesc">efeito adicional 2: </span>
+                      <span className="cardContent">{spell.pluseff2}</span>
                       <br />
-                      <span className="spellsText">efeito adicional 3: </span>
-                      <span className="spellsJson">{spell.pluseff3}</span>
+                      <span className="cardDesc">efeito adicional 3: </span>
+                      <span className="cardContent">{spell.pluseff3}</span>
                       <br />
-                      <span className="spellsText">efeito adicional 4: </span>
-                      <span className="spellsJson">{spell.pluseff4}</span>
+                      <span className="cardDesc">efeito adicional 4: </span>
+                      <span className="cardContent">{spell.pluseff4}</span>
                       <br />
                     </div>
                   </div>

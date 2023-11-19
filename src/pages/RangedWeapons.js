@@ -167,26 +167,26 @@ function RangedWeapons() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="equipsText">Alcance: </span>
-                      <span className="equipsJson">{json.reach}</span>
+                      <span className="cardDesc">Alcance: </span>
+                      <span className="cardContent">{json.reach}</span>
                       <br></br>
-                      <span className="equipsText">Dano: </span>
-                      <span className="equipsJson">{json.damage}</span>
+                      <span className="cardDesc">Dano: </span>
+                      <span className="cardContent">{json.damage}</span>
                       <br></br>
-                      <span className="equipsText">Tipo de dano: </span>
-                      <span className="equipsJson">{json.dtype}</span>
+                      <span className="cardDesc">Tipo de dano: </span>
+                      <span className="cardContent">{json.dtype}</span>
                       <br></br>
-                      <span className="equipsText">Rolagem: </span>
-                      <span className="equipsJson">{json.roll}</span>
+                      <span className="cardDesc">Rolagem: </span>
+                      <span className="cardContent">{json.roll}</span>
                       <br></br>
-                      <span className="equipsText">Cadência: </span>
-                      <span className="equipsJson">{json.fireRate}</span>
+                      <span className="cardDesc">Cadência: </span>
+                      <span className="cardContent">{json.fireRate}</span>
                       <br></br>
-                      <span className="equipsText">Capacidade: </span>
-                      <span className="equipsJson">{json.size}</span>
+                      <span className="cardDesc">Capacidade: </span>
+                      <span className="cardContent">{json.size}</span>
                       <br></br>
-                      <span className="equipsText">Tempo de recarregar: </span>
-                      <span className="equipsJson">{json.reload}</span>
+                      <span className="cardDesc">Tempo de recarregar: </span>
+                      <span className="cardContent">{json.reload}</span>
                       <br></br>
 
                       <br></br>

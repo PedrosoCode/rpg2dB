@@ -167,26 +167,26 @@ function ArmorsPage() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="equipsText">Nome: </span>
-                      <span className="equipsJson">{json.name}</span>
+                      <span className="cardDesc">Nome: </span>
+                      <span className="cardContent">{json.name}</span>
                       <br></br>
-                      <span className="equipsText">Tipo: </span>
-                      <span className="equipsJson">{json.ArmType}</span>
+                      <span className="cardDesc">Tipo: </span>
+                      <span className="cardContent">{json.ArmType}</span>
                       <br></br>
-                      <span className="equipsText">Defesa: </span>
-                      <span className="equipsJson">{json.defense}</span>
+                      <span className="cardDesc">Defesa: </span>
+                      <span className="cardContent">{json.defense}</span>
                       <br></br>
-                      <span className="equipsText">Absorção: </span>
-                      <span className="equipsJson">{json.absor}</span>
+                      <span className="cardDesc">Absorção: </span>
+                      <span className="cardContent">{json.absor}</span>
                       <br></br>
-                      <span className="equipsText">Penalidade de movimentação </span>
-                      <span className="equipsJson">{json.movPenalt}</span>
+                      <span className="cardDesc">Penalidade de movimentação </span>
+                      <span className="cardContent">{json.movPenalt}</span>
                       <br></br>
-                      <span className="equipsText">vantagens: </span>
-                      <span className="equipsJson">{json.vant}</span>
+                      <span className="cardDesc">vantagens: </span>
+                      <span className="cardContent">{json.vant}</span>
                       <br></br>
-                      <span className="equipsText">Desvatagens: </span>
-                      <span className="equipsJson">{json.desvant}</span>
+                      <span className="cardDesc">Desvatagens: </span>
+                      <span className="cardContent">{json.desvant}</span>
                       <br></br>
                       <br />
                     </div>

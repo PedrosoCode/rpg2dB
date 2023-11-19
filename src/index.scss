@@ -80,15 +80,15 @@ code {
   background-color: $cor-card;
 }
 
+.cardDesc {
+  color: rgb(78, 78, 78);
+  font-weight: bold;
+}
+
 .cardContent {
   color: $cardContentColor;
   font-weight: bold;
   font-style: italic;
-}
-
-.cardDesc {
-  color: rgb(78, 78, 78);
-  font-weight: bold;
 }
 
 .spellContent {
