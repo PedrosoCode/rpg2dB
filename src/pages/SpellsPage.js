@@ -105,19 +105,19 @@ function SpellsPage() {
           <div className="columns is-multiline">
             {filteredSpells.map((spell, index) => (
               <div className="column is-one-quarter" key={index}>
-                <div className="card equips-card">
-                  <header className="card-header">
+                <div className="card ">
+                  <header className="card-header ">
                     <p className="card-header-title">{spell.name}</p>
                   </header>
-                  <div className="card-content">
+                  <div className="card-content equips-card">
                     <div className="content">
                       <Tags tags={spell.tags} />
                       <br />
                       {/* Aqui vão os outros campos do arquivo JSON */}
                       Requisitos: {spell.requisitos}
                       <br />
-                      <span className="spellsText">Tempo de Casting: </span>
-                      <span className="spellsJson">{spell.casting}</span>
+                      <span className="cardDesc">Tempo de Casting: </span>
+                      <span className="cardContent">{spell.casting}</span>
                       <br />
                       <span className="spellsText">alcance: </span>
                       <span className="spellsJson">{spell.reach}</span>

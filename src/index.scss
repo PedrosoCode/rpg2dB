@@ -1,3 +1,11 @@
+$cor-primaria: rgb(0, 0, 255);
+$cor-secundaria: #e74c3c;
+$cor-card: #2ecc71;
+
+$cardtop: rgb(19, 143, 91);
+$cardbody: rgb(124, 233, 170);
+$cardContentColor: mediumblue;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -8,7 +16,7 @@ body {
 }
 
 .MainBG {
-  background-color: rgb(42, 61, 165);
+  background-color: $cor-primaria;
 }
 
 code {
@@ -42,7 +50,7 @@ code {
 
 .mainhead {
   position: relative;
-  background-image: url('./imgs/headerbg.png'); /* Substitua pelo caminho real da imagem de fundo */
+  background-image: url("./imgs/headerbg.png"); /* Substitua pelo caminho real da imagem de fundo */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -66,6 +74,21 @@ code {
   font-size: xx-large;
   position: relative; /* Adicione essa propriedade para ajustar o texto */
   z-index: 2; /* Defina um valor maior para manter o texto acima do overlay */
+}
+
+.equips-card {
+  background-color: $cor-card;
+}
+
+.cardContent {
+  color: $cardContentColor;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cardDesc {
+  color: rgb(78, 78, 78);
+  font-weight: bold;
 }
 
 .spellContent {
@@ -148,5 +171,5 @@ code {
 }
 
 .mainNavbar .active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
 }
