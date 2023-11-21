@@ -1,5 +1,15 @@
 [
   {
+    "name": "Armadura de couro",
+    "ArmType": "leve",
+    "defense": "8",
+    "absor": "0",
+    "movPenalt": "Nenhuma",
+    "vant": "Nenhuma",
+    "desvant": "Nenhuma",
+    "tags": ["Leve", "medieval"]
+  },
+  {
     "name": "teste1",
     "ArmType": "ArmType",
     "defense": "teste2",
