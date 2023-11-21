@@ -73,5 +73,14 @@
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
     "tags": ["tag1", "Tag3"]
+  },
+  {
+    "name": "Demon's Rapier",
+    "atrAcerto": "1H",
+    "atrBonus": "DEX",
+    "throw": "Não",
+    "damage": "1D4 de fogo + 1D6 Cortante",
+    "dtype": "Cortante/Fogo",
+    "tags": ["rapiera", "medieval"]
   }
 ]

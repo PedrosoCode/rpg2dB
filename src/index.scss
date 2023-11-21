@@ -4,6 +4,7 @@ $cor-card: #2ecc71;
 
 $cardtop: rgb(19, 143, 91);
 $cardbody: rgb(124, 233, 170);
+$cardDescColor: rgb(78, 78, 78);
 $cardContentColor: mediumblue;
 
 body {
@@ -81,7 +82,7 @@ code {
 }
 
 .cardDesc {
-  color: rgb(78, 78, 78);
+  color: $cardDescColor;
   font-weight: bold;
 }
 
