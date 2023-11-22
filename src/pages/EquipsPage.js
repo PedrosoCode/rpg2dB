@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import JsonWeapons from "../info/weapons.json";
-import { Navbar, Footer } from "../globals/globals";
+import { Navbar, Footer, MasterMenu} from "../globals/globals";
 
 // Componente Tags para exibir as tags de uma arma
 function Tags({ tags }) {
@@ -192,6 +192,7 @@ function EquipsPage() {
           </div>
         </div>
       </section>
+      <MasterMenu /> <br></br>
       <Footer />
     </div>
   );

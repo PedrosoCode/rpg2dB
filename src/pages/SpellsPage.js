@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import spellsData from "../info/spells.json";
-import { Navbar, Footer } from "../globals/globals";
+import { Navbar, Footer, MasterMenu } from "../globals/globals";
 
 function Tags({ tags }) {
   return (
@@ -151,6 +151,7 @@ function SpellsPage() {
           </div>
         </div>
       </section>
+      <MasterMenu /> <br></br>
       <Footer />
     </div>
   );

@@ -1,6 +1,11 @@
+
+import { Link } from "react-router-dom";
 function MasterMenu() {
+  
   // Conteúdo do seu Navbar
+
   return (
+    <div className="box">
     <div className="MasterMenu">
       <aside class="menu">
         <p class="menu-label">Navegação</p>
@@ -36,6 +41,7 @@ function MasterMenu() {
           </li>
         </ul>
       </aside>
+    </div>
     </div>
   );
 }

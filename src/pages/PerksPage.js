@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import perksData from "../info/Perks.json";
-import { Navbar, Footer } from "../globals/globals";
+import { Navbar, Footer, MasterMenu } from "../globals/globals";
 
 function Tags({ tags }) {
   return (
@@ -289,6 +289,7 @@ function PerksPage() {
           </div>
         </div>
       </section>
+      <MasterMenu /> <br></br>
       <Footer />
     </div>
   );

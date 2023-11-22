@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import JsonThings from "../info/things.json";
-import { Navbar, Footer } from "../globals/globals";
+import { Navbar, Footer, MasterMenu } from "../globals/globals";
 
 // Componente Tags para exibir as tags de uma arma
 function Tags({ tags }) {
@@ -194,6 +194,7 @@ function ThingsPage() {
           </div>
         </div>
       </section>
+      <MasterMenu /> <br></br>
       <Footer />
     </div>
   );

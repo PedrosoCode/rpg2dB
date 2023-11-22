@@ -2,13 +2,12 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Footer } from "../globals/globals"; // Caminho atualizado
+import { Navbar, Footer, MasterMenu } from "../globals/globals"; // Caminho atualizado
 
 function HomePage() {
   return (
     <div className="MainBG">
       <Navbar />
-
       <section className="section is-medium mainhead">
         <h1 className="headtext">Uma Breve introdução ao sistema RPG2D</h1>
         <h2 className="headtext">
