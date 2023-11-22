@@ -182,6 +182,9 @@ function ThingsPage() {
                       <span className="equipsText">Raridade: </span>
                       <span className="equipsJson">{json.rarity}</span>
                       <br></br>
+                      <span className="equipsText">Efeito: </span>
+                      <span className="equipsJson">{json.effect}</span>
+                      <br></br>
                       <br />
                     </div>
                   </div>

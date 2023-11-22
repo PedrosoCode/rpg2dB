@@ -1,5 +1,14 @@
 [
   {
+    "name": "poção de cura",
+    "type": "Poção",
+    "cost":"$ 25",
+    "weight":"0.5",
+    "rarity":"commmom",
+    "effect":"Uma poção que cura 1d6 de vida",
+    "tags": ["potion", "alchemy", "commom"]
+  },
+  {
     "name": "teste3",
     "type": "teste2",
     "cost":"olá",
