@@ -7,6 +7,9 @@ $cardbody: rgb(124, 233, 170);
 $cardDescColor: rgb(78, 78, 78);
 $cardContentColor: mediumblue;
 
+$moneyCost: rgb(72, 255, 0);
+$moneyPremium: rgb(255, 174, 0);
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -84,6 +87,14 @@ code {
 .cardDesc {
   color: $cardDescColor;
   font-weight: bold;
+}
+
+.moneyCost {
+  color: $moneyCost;
+}
+
+.moneyPremium {
+  color: $moneyPremium;
 }
 
 .cardContent {

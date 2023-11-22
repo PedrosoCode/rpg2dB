@@ -4,21 +4,26 @@
     "type": "Poção",
     "cost":"$ 25",
     "weight":"0.5",
-    "rarity":"commmom",
+    "rarity":"comum",
     "effect":"Uma poção que cura 1d6 de vida",
-    "tags": ["potion", "alchemy", "commom"]
+    "tags": ["pocao", "alquimia", "comum"]
   },
   {
-    "name": "teste3",
-    "type": "teste2",
-    "cost":"olá",
-    "weight":"olá",
-    "rarity":"olá",
-    "tags": ["taggg", "toggle"]
+    "name": "Lingote de Ouro",
+    "type": "material",
+    "cost":"$ 200",
+    "weight":"1.0",
+    "rarity":"raro",
+    "effect":"Uma porção de ouro em formato de Lingote",
+    "tags": ["mineral", "alquimia", "material"]
   },
   {
-    "name": "teste2",
-    "efeito": "teste2",
-    "tags": ["int", "perc"]
+    "name": "Lingote de ferro",
+    "type": "material",
+    "cost":"$ 50",
+    "weight":"1.0",
+    "rarity":"comum",
+    "effect":"Uma porção de ferro em formato de Lingote",
+    "tags": ["mineral", "alquimia", "material"]
   }
 ]
