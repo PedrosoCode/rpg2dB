@@ -149,7 +149,7 @@ function CoreRules() {
             </div>
           </div>
 
-          <MasterMenu />
+          <MasterMenu /><br></br>
         </div>
       </section>
 

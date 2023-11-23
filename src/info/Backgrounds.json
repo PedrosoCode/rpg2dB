@@ -1,0 +1,15 @@
+[
+    {
+        "name":"poção de",
+      "addPlusFive": "poção de cura",
+      "addPlusTen": "Poção",
+      "addModifier":"$ 25",
+      "prof":"0.5",
+      "choosePerk":"comum",
+      "starterPack":"Uma poção que cura 1d6 de vida",
+      "plusEffect":"Uma poção vida",
+      "description":"Uma poção que cura 1d6 de vida",
+      "tags": ["pocao", "alquimia", "comum"]
+    }
+  ]
+  

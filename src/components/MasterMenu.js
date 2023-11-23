@@ -13,7 +13,7 @@ function MasterMenu() {
               <ul>
                 <li>
                   <a class="is-active mainColor">
-                    <Link to="/HomePage">Página Inicial</Link>
+                    <Link to="/">Página Inicial</Link>
                   </a>
                 </li>
                 <li>
@@ -24,6 +24,9 @@ function MasterMenu() {
                 </li>
                 <li>
                   <Link to="/SheetsPage">Fichas</Link>
+                </li>
+                <li>
+                  <Link to="/Backgrounds">Backgrounds</Link>
                 </li>
                 <li>
                   <Link to="/EquipsPage">Armas Brancas</Link>
