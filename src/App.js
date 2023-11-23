@@ -14,6 +14,7 @@ import PerksPage from './pages/PerksPage'
 import RangedWeapons from './pages/RangedWeapons';
 import ArmorsPage from './pages/ArmorsPage';
 import ThingsPage from './pages/ThingsPage';
+import CoreRules from './pages/CoreRules';
 
 
 /* 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/RangedWeapons" element={<RangedWeapons />} />
         <Route path="/ArmorsPage" element={<ArmorsPage />} />
         <Route path="/ThingsPage" element={<ThingsPage />} />
+        <Route path="/CoreRules" element={<CoreRules />} />
       </Routes>
     </BrowserRouter>
   );

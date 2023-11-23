@@ -17,6 +17,9 @@ function MasterMenu() {
                   </a>
                 </li>
                 <li>
+                  <Link to="/CoreRules">Core Rules</Link>
+                </li>
+                <li>
                   <Link to="/WorldPage">worldbuilding</Link>
                 </li>
                 <li>

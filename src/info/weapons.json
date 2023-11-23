@@ -6,7 +6,6 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "teste": "testeee",
     "excec":"",
     "tags": ["padrao", "Tag3"]
   },
@@ -17,7 +16,6 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "teste": "testeee",
     "tags": ["tag1", "Tag3"]
   },
   {
