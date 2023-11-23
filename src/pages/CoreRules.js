@@ -8,11 +8,10 @@ function CoreRules() {
   return (
     <div className="MainBG">
       <Navbar />
-      <section className="section is-medium mainhead">
-        <h1 className="headtext">Uma Breve introdução ao sistema RPG2D</h1>
+      <section className="section is-medium daRulesHead">
+        <h1 className="headtext">Regras de jogo</h1>
         <h2 className="headtext">
-          Um sistema <strong>Universal, e simples</strong>, Para a sua mesa de
-          RPG
+         Todos os <strong>principais pontos </strong> para compreender a lógica de jogo
         </h2>
         <div className="overlay"></div>
       </section>
@@ -109,6 +108,9 @@ function CoreRules() {
               <h1>Combate</h1>
               <p>
                 <li>Tipos de dano</li>
+              </p>
+              <p>
+                <h5>Condições</h5>
               </p>
             </div>
             <div class="content is-medium">

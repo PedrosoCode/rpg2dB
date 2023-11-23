@@ -61,6 +61,15 @@ code {
   color: white !important;
 }
 
+.daRulesHead {
+  position: relative;
+  background-image: url("./imgs/corerulesbg.jpg"); /* Substitua pelo caminho real da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white !important;
+}
+
 /* Estilize o overlay */
 .overlay {
   content: "";
