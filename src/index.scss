@@ -70,6 +70,15 @@ code {
   color: white !important;
 }
 
+.mainWorldHead {
+  position: relative;
+  background-image: url("./imgs/worldbuilding2.webp"); /* Substitua pelo caminho real da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white !important;
+}
+
 /* Estilize o overlay */
 .overlay {
   content: "";
