@@ -10,5 +10,17 @@
     "plusEffect": "Uma poção vida",
     "description": "Uma poção que cura 1d6 de vida",
     "tags": ["pocao", "alquimia", "comum"]
+  },
+  {
+    "name": "ladrão",
+    "addPlusFive": "Inteligência, ou Destreza",
+    "addPlusTen": "Furtividade",
+    "addModifier": "Furtividade, Destreza, ou Percepção",
+    "prof": "Ferramentas de ladrão, Adagas.",
+    "choosePerk": "comum",
+    "starterPack": "Uma poção que cura 1d6 de vida",
+    "plusEffect": "Uma poção vida",
+    "description": "Uma poção que cura 1d6 de vida",
+    "tags": ["pocao", "alquimia", "comum"]
   }
 ]

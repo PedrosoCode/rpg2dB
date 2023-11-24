@@ -131,10 +131,10 @@ function Backgrounds() {
                       <Tags tags={backs.tags} />
                       <br />
                       {/* Aqui vão os outros campos do seu arquivo JSON */}
-                      <span className="cardDesc">você ganha +5 nos seguintes Atributos: </span>
+                      <span className="cardDesc">você sobe o rank nos seguintes Atributos: </span>
                       <span className="cardContent">{backs.addPlusFive}</span>
                       <br></br>
-                      <span className="cardDesc">você ganha +10 no seguinte Atributo: </span>
+                      <span className="cardDesc">você sobe o rank no seguinte Atributo: </span>
                       <span className="cardContent">{backs.addPlusTen}</span>
                       <br></br>
                       <span className="cardDesc">Escolha entre atributos para gahar +1 fixo no modificador: </span>
