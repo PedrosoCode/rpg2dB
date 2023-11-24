@@ -113,8 +113,11 @@ function SpellsPage() {
                     <div className="content">
                       <Tags tags={spell.tags} />
                       <br />
-                      {/* Aqui vão os outros campos do arquivo JSON */}
+                      {/* Aqui vão os outros campos do arquivo JSON */} 
                       Requisitos: {spell.requisitos}
+                      <br />
+                      <span className="cardDesc">Custo em Mana </span>
+                      <span className="cardContent">{spell.cost}</span>
                       <br />
                       <span className="cardDesc">Tempo de Casting: </span>
                       <span className="cardContent">{spell.casting}</span>

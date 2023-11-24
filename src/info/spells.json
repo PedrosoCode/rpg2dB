@@ -1,6 +1,7 @@
 [
   {
     "name": "Mísseis Mágicos",
+    "cost":"15 mp",
     "requisitos": "Gesto, Som",
     "casting": "1 ação",
     "reach": "65ft",
@@ -14,13 +15,14 @@
     "tags": ["tag1", "Tag3"]
   },
   {
-    "name": "name2",
-    "requisitos": "requisitos",
-    "casting": "casting",
-    "reach": "reach",
-    "duration": "duration",
-    "concen": "concen",
-    "effect": "effect",
+    "name": "Firebolt",
+    "cost":"5 mp",
+    "requisitos": "Gesto, Som",
+    "casting": "1 Ação",
+    "reach": "40ft",
+    "duration": "Instantâneo",
+    "concen": "não",
+    "effect": "Você conjura um dardo de fogo que no impacto causa 1d4 de dano de fogo",
     "pluseff1": "pluseff1",
     "pluseff2": "pluseff2",
     "pluseff3": "pluseff3",
@@ -29,6 +31,7 @@
   },
   {
     "name": "name3",
+    "cost":"",
     "requisitos": "requisitos",
     "casting": "casting",
     "reach": "reach",
