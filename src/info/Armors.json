@@ -10,6 +10,16 @@
     "tags": ["Leve", "medieval"]
   },
   {
+    "name": "Armadura de Placas",
+    "ArmType": "Pesada",
+    "defense": "17",
+    "absor": "4",
+    "movPenalt": "-10t",
+    "vant": "Nenhuma",
+    "desvant": "Nenhuma",
+    "tags": ["medieval", "pesada"]
+  },
+  {
     "name": "teste1",
     "ArmType": "ArmType",
     "defense": "teste2",
@@ -18,10 +28,5 @@
     "vant": "teste4",
     "desvant": "teste5",
     "tags": ["perc", "cari"]
-  },
-  {
-    "name": "teste2",
-    "efeito": "teste2",
-    "tags": ["int", "perc"]
   }
 ]
