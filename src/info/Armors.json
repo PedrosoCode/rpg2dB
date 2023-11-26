@@ -20,6 +20,16 @@
     "tags": ["medieval", "pesada"]
   },
   {
+    "name": "Cota de malha",
+    "ArmType": "média",
+    "defense": "15",
+    "absor": "2",
+    "movPenalt": "-5t",
+    "vant": "Nenhuma",
+    "desvant": "Nenhuma",
+    "tags": ["medieval", "media"]
+  },
+  {
     "name": "teste1",
     "ArmType": "ArmType",
     "defense": "teste2",
