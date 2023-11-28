@@ -1,5 +1,16 @@
 [
   {
+    "name": "pistola",
+    "reach":"120ft",
+    "damage": "1d4+1",
+    "dtype":"Perfurante",
+    "roll":"Pontaria",
+    "fireRate":"2",
+    "size":"12",
+    "reload":"ação",
+    "tags": ["moderno", "pistola"]
+  },
+  {
     "name": "teste1",
     "reach":"teste2",
     "damage": "teste3",
@@ -9,10 +20,5 @@
     "size":"teste6",
     "reload":"teste7",
     "tags": ["perc", "cari"]
-  },
-  {
-    "name": "teste2",
-    "efeito": "teste2",
-    "tags": ["int", "perc"]
   }
 ]
