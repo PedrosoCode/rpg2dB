@@ -5,10 +5,21 @@
     "damage": "1d4+1",
     "dtype":"Perfurante",
     "roll":"Pontaria",
-    "fireRate":"2",
+    "fireRate":"3",
     "size":"12",
     "reload":"ação",
     "tags": ["moderno", "pistola"]
+  },
+  {
+    "name": "revolver",
+    "reach":"140ft",
+    "damage": "1d6+1",
+    "dtype":"Perfurante",
+    "roll":"Pontaria",
+    "fireRate":"2",
+    "size":"6",
+    "reload":"ação",
+    "tags": ["moderno", "revolver", "medieval"]
   },
   {
     "name": "teste1",
