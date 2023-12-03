@@ -33,6 +33,17 @@
     "tags": ["medieval"]
   },
   {
+    "name": "Mosquete",
+    "reach":"145ft",
+    "damage": "1d6+4",
+    "dtype":"Perfurante",
+    "roll":"Pontaria",
+    "fireRate":"1",
+    "size":"1",
+    "reload":"1 ação menor e uma ação",
+    "tags": ["medieval", "rifle"]
+  },
+  {
     "name": "teste1",
     "reach":"teste2",
     "damage": "teste3",
