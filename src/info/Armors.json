@@ -40,6 +40,16 @@
     "tags": ["medieval", "leve"]
   },
   {
+    "name": "Roupa Acolchoada",
+    "ArmType": "leve",
+    "defense": "8",
+    "absor": "0",
+    "movPenalt": "nenhuma",
+    "vant": "nenhuma",
+    "desvant": "nenhuma",
+    "tags": ["medieval", "leve"]
+  },
+  {
     "name": "teste1",
     "ArmType": "ArmType",
     "defense": "teste2",

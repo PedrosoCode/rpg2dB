@@ -40,61 +40,6 @@ function WorldPage() {
                 o RPG2D se torna a base perfeita para um sistema simples,
                 Universal e adaptável
               </p>
-
-              <table class="table is-bordered is-striped is-hoverable">
-                <thead>
-                  <tr>
-                    <th>Rank do atributo</th>
-                    <th>Dado a ser utilizado</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>0</td>
-                    <td>Nenhum</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>1D4</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>1D6</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>1D8</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>1D10</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>1D12</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>1D16</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>1D20</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>1D20 + 1</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>1D20 + 2</td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>1D20 + 3</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
 
