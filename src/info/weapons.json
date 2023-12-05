@@ -80,5 +80,14 @@
     "damage": "1D4 de fogo + 1D6 Cortante",
     "dtype": "Cortante/Fogo",
     "tags": ["rapiera", "medieval"]
+  },
+  {
+    "name": "Foice",
+    "atrAcerto": "2H",
+    "atrBonus": "DEX",
+    "throw": "Não",
+    "damage": "1D8",
+    "dtype": "Perfurante ou Cortante",
+    "tags": ["foice", "medieval"]
   }
 ]
