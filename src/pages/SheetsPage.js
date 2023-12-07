@@ -154,8 +154,10 @@ function SheetsPage() {
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Força: {json.for} </td>
-                        <td>Destreza: {json.des} </td>
+                        <td>Força: </td>
+                        <td>{json.for} </td>
+                        <td>Destreza:</td>
+                        <td>{json.des} </td>
                       </tr>
                       <tr>
                         <td>Inteligência: {json.int} </td>

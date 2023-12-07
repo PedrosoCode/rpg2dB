@@ -44,6 +44,17 @@
     "tags": ["medieval", "rifle"]
   },
   {
+    "name": "Fuzil Antimatéria",
+    "reach":"300ft",
+    "damage": "1d12+5",
+    "dtype":"Perfurante",
+    "roll":"Pontaria",
+    "fireRate":"1",
+    "size":"1",
+    "reload":"uma ação",
+    "tags": ["moderno", "rifle", "pesado"]
+  },
+  {
     "name": "teste1",
     "reach":"teste2",
     "damage": "teste3",
