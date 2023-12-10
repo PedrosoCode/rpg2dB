@@ -60,6 +60,16 @@
     "tags": ["moderno", "leve", "policia"]
   },
   {
+    "name": "Colete do exército",
+    "ArmType": "media",
+    "defense": "12",
+    "absor": "3",
+    "movPenalt": "nenhuma",
+    "vant": "+2 de dano adicional absorvido por armas de fogo",
+    "desvant": "nenhuma",
+    "tags": ["moderno", "pesado", "militar"]
+  },
+  {
     "name": "teste1",
     "ArmType": "ArmType",
     "defense": "teste2",
