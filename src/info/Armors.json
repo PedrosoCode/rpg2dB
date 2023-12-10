@@ -50,6 +50,16 @@
     "tags": ["medieval", "leve"]
   },
   {
+    "name": "Colete da polícia",
+    "ArmType": "leve",
+    "defense": "10",
+    "absor": "2",
+    "movPenalt": "nenhuma",
+    "vant": "+1 de dano adicional absorvido por armas de fogo",
+    "desvant": "nenhuma",
+    "tags": ["moderno", "leve", "policia"]
+  },
+  {
     "name": "teste1",
     "ArmType": "ArmType",
     "defense": "teste2",

@@ -29,7 +29,7 @@ function MasterMenu() {
                   <Link to="/Backgrounds">Backgrounds</Link>
                 </li>
                 <li>
-                  <Link to="/EquipsPage">Armas Brancas</Link>
+                  <Link to="/EquipsPage">Corpo a corpo</Link>
                 </li>
                 <li>
                   <Link to="/RangedWeapons">Armas à distância</Link>
