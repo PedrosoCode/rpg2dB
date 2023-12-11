@@ -32,6 +32,38 @@
     "tags": ["padrao", "Tag3"]
   },
   {
+    "name": "somebody",
+    "lifeDice": "1d12",
+    "hp": "20",
+    "mp": "25",
+    "atrSpell": "sabedoria",
+    "desloc": "35ft",
+    "armor": "armadura de couro",
+    "armDef": "12",
+    "armAbsor": "1",
+    "movPenalt": "nenhuma",
+
+    "for": "1d16",
+    "des": "1d6",
+    "int": "1d6",
+    "conh": "1d4",
+    "sab": "1d4",
+    "con": "1d20",
+    "perc": "1d16",
+    "cari": "1d16",
+    "oneH": "1d10",
+    "twoH": "1d12",
+    "furt": "1d10",
+    "pont": "1d4",
+
+    "perk": "Conjurador rápido",
+    "spellList": "Mísseis mágicos, bola de fogo, controlar agua, derreter armaduras",
+    "weapons": "adaga, espada, cajado",
+    "inventory": "2 batatas cozidas, uma maça, uma torta, 12 flechas com pena de pavão e 3 tochas",
+    "backstory": "Lorem Ipsum Dolor sit ammet",
+    "tags": ["padrao", "Tag3"]
+  },
+  {
     "name": "Outro alguem",
     "lifeDice": "1d10",
     "hp": "18",

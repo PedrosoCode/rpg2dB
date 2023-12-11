@@ -146,10 +146,12 @@ function SheetsPage() {
                   <span className="npcText">Penalidade de movimentação: </span>
                   <span className="npcJson">{json.movPenalt}</span>
                   <br></br>
-                  <table class="table is-bordered is-striped is-hoverable">
+                  <br></br>
+                  <div className="table-container">
+                  <table className="table is-bordered is-striped is-hoverable" style={{ overflowX: 'auto' }}>
                     <thead>
                       <tr>
-                        <th colSpan={2}>Atributos</th>
+                        <th colSpan={4}>Atributos</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -191,19 +193,20 @@ function SheetsPage() {
                       </tr>
                     </tbody>
                   </table>
-                  <span className="npcText">Vantagens/perks </span> 
+                  </div>
+                  <span className="npcText">Vantagens/perks: </span> 
                   <span className="npcJson">{json.perk}</span>
                   <br></br>
-                  <span className="npcText">Spell List </span> 
+                  <span className="npcText">Spell List: </span> 
                   <span className="npcJson">{json.spellList}</span>
                   <br></br>
-                  <span className="npcText">Armas </span> 
+                  <span className="npcText">Armas: </span> 
                   <span className="npcJson">{json.weapons}</span>
                   <br></br>
-                  <span className="npcText">inventário </span> 
+                  <span className="npcText">inventário: </span> 
                   <span className="npcJson">{json.inventory}</span>
                   <br></br>
-                  <span className="npcText">backstory </span> 
+                  <span className="npcText">backstory: </span> 
                   <span className="npcJson">{json.backstory}</span>
                 </div>
               </div>
