@@ -113,11 +113,11 @@ function SheetsPage() {
           <div className="columns is-multiline">
             {filteredNpcs.map((json, index) => (
               <div className="column is-half" key={index}>
-                <div className="box">
+                <div className="box centeredContainer">
                   <Tags tags={json.tags} />
                   <br />
-                  <span className="npcText">Nome do personagem </span>
-                  <span className="npcJson">{json.name}</span>
+                  <span className="npcTextTitle">{json.name}</span>
+                  <br></br>
                   <br></br>
                   <span className="npcText">Dado de vida: </span>
                   <span className="npcJson">{json.lifeDice}</span>
@@ -160,24 +160,34 @@ function SheetsPage() {
                         <td>{json.des} </td>
                       </tr>
                       <tr>
-                        <td>Inteligência: {json.int} </td>
+                        <td>Inteligência:</td>
+                        <td>{json.int} </td>
                         <td>Conhecimento: {json.conh} </td>
+                        <td>{json.conh} </td>
                       </tr>
                       <tr>
-                        <td>Sabedoria: {json.sab} </td>
-                        <td>Constituição: {json.con} </td>
+                        <td>Sabedoria:</td>
+                        <td> {json.sab} </td>
+                        <td>Constituição:</td>
+                        <td>{json.con} </td>
                       </tr>
                       <tr>
-                        <td>Percepção: {json.perc} </td>
-                        <td>Carisma: {json.cari} </td>
+                        <td>Percepção:</td>
+                        <td>{json.perc} </td>
+                        <td>Carisma: </td>
+                        <td>{json.cari} </td>
                       </tr>
                       <tr>
-                        <td>Armas de uma mão: {json.oneH} </td>
-                        <td>Armas de duas mãos: {json.twoH} </td>
+                        <td>Armas de uma mão:</td>
+                        <td>{json.oneH} </td>
+                        <td>Armas de duas mãos:</td>
+                        <td>{json.twoH} </td>
                       </tr>
                       <tr>
-                        <td>Furtividade: {json.furt} </td>
-                        <td>Pontaria: {json.pont} </td>
+                        <td>Furtividade: </td>
+                        <td>{json.furt} </td>
+                        <td>Pontaria:</td>
+                        <td>{json.pont} </td>
                       </tr>
                     </tbody>
                   </table>

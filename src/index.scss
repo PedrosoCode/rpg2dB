@@ -146,6 +146,12 @@ code {
   color: rgb(78, 78, 78);
 }
 
+.npcTextTitle {
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+  font-size: x-large;
+}
+
 .npcJson {
   color: rgb(0, 38, 255);
   font-style: italic;
@@ -206,4 +212,11 @@ code {
 
 .mainColor {
   color: $cor-primaria;
+}
+
+.centeredContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
