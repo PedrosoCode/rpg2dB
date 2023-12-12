@@ -161,6 +161,16 @@ function CoreRules() {
                 leo vitae, commodo tempus massa. Duis eget turpis in dui
                 dapibus.
               </p>
+              <h1>Escolhendo o seu Dado de vida</h1>
+              <p>
+                O dado de vida dita o quanto de Mana você tem eles são
+                respectivamente <br></br>
+                <ul>
+                  <li>1D8  (O Número de faces do seu dado de Spellcasting x 3 para mana)</li>
+                  <li>1D10 (O Número de faces do seu dado de Spellcasting x 2 para mana)</li>
+                  <li>1D12 (Sem uso de mana, gasta HP no Lugar)</li>
+                </ul>
+              </p>
             </div>
             <div class="content is-medium">
               <h1>Utilizando Perks</h1>

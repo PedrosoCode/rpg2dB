@@ -164,7 +164,7 @@ function SheetsPage() {
                       <tr>
                         <td>Inteligência:</td>
                         <td>{json.int} </td>
-                        <td>Conhecimento: {json.conh} </td>
+                        <td>Conhecimento:</td>
                         <td>{json.conh} </td>
                       </tr>
                       <tr>
@@ -206,7 +206,7 @@ function SheetsPage() {
                   <span className="npcText">inventário: </span> 
                   <span className="npcJson">{json.inventory}</span>
                   <br></br>
-                  <span className="npcText">backstory: </span> 
+                  <span className="npcText">info: </span> 
                   <span className="npcJson">{json.backstory}</span>
                 </div>
               </div>

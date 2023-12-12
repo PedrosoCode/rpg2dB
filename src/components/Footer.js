@@ -4,7 +4,7 @@ function Footer() {
 <footer  id="Footer">
 <div class="content has-text-centered">
   <p>
-    RPG2D. Criado por Gabriel Ribeiro <br></br> The source code is licensed, The RPG is not
+    RPG2D. Criado por Gabriel Ribeiro <br></br> Open Source
   </p>
 </div>
 </footer>
