@@ -8,7 +8,7 @@ function MasterMenu() {
         <aside class="menu">
           <p class="menu-label">Navegação</p>
           <ul class="menu-list">
-            <li>
+            <li> 
               Links das páginas principais
               <ul>
                 <li>
