@@ -70,6 +70,16 @@
     "tags": ["moderno", "pesado", "militar"]
   },
   {
+    "name": "Armadura de placas improvisada",
+    "ArmType": "média",
+    "defense": "15",
+    "absor": "1",
+    "movPenalt": "nenhuma",
+    "vant": "nenhuma",
+    "desvant": "nenhuma",
+    "tags": ["medieval", "media"]
+  },
+  {
     "name": "teste1",
     "ArmType": "ArmType",
     "defense": "teste2",

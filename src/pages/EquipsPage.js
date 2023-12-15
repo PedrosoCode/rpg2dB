@@ -167,10 +167,10 @@ function EquipsPage() {
                     <div className="content">
                       <Tags tags={json.tags} />
                       <br />
-                      <span className="cardDesc"></span>
+                      <span className="cardDesc">O atributo de rolagem é: </span>
                       <span className="cardContent">{json.atrAcerto}</span>
                       <br></br>
-                      <span className="cardDesc">O atributo Para Bonus de dano é</span>
+                      <span className="cardDesc">O atributo Para Bonus de dano é: </span>
                       <span className="cardContent">{json.atrBonus}</span>
                       <br></br>
                       <span className="cardDesc">Lançamento: </span>

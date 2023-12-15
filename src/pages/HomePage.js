@@ -30,7 +30,7 @@ function HomePage() {
               <h1>A favor da simplicidade</h1>
               <p>
                 O sistema RPG2D é baseado essencialmente no uso de dois dados
-                para fazer as rolagens (dái vem o nome, RPG 2 D) <br></br>
+                para fazer as rolagens (daí vem o nome, RPG 2 D) <br></br>
                 As rolagens são feitas juntando o dado primário, D20. Com o seu
                 dado secundário, o dado secundário varia de acordo com seu nível
                 no atributo que será usado

@@ -185,7 +185,7 @@ function ArmorsPage() {
                       <span className="cardDesc">vantagens: </span>
                       <span className="cardContent">{json.vant}</span>
                       <br></br>
-                      <span className="cardDesc">Desvatagens: </span>
+                      <span className="cardDesc">Desvantagens: </span>
                       <span className="cardContent">{json.desvant}</span>
                       <br></br>
                       <br />
