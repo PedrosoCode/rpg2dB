@@ -25,5 +25,14 @@
     "rarity":"comum",
     "effect":"Uma porção de ferro em formato de Lingote",
     "tags": ["mineral", "alquimia", "material"]
+  },
+  {
+    "name": "Mochila",
+    "type": "Equipamento",
+    "cost":"$ 80",
+    "weight":"1.0",
+    "rarity":"comum",
+    "effect":"Uma mochila que aumenta em 20 sua capacidade de inventário",
+    "tags": ["equipamento", "mochila", "medieval", "moderno"]
   }
 ]
