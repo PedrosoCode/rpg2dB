@@ -29,7 +29,7 @@ function Navbar() {
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Dark offcanvas
+              Navegação
             </h5>
             <button
               type="button"
