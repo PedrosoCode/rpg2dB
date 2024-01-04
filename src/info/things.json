@@ -34,5 +34,14 @@
     "rarity":"comum",
     "effect":"Uma mochila que aumenta em 20 sua capacidade de inventário",
     "tags": ["equipamento", "mochila", "medieval", "moderno"]
+  },
+  {
+    "name": "Poção de veneno",
+    "type": "Poção",
+    "cost":"$ 85",
+    "weight":"0.5",
+    "rarity":"comum",
+    "effect":"Uma poção que pode ser usada para envenenar uma arma e causar um dano adicional de + 1d4",
+    "tags": ["equipamento", "poção", "medieval", "moderno"]
   }
 ]

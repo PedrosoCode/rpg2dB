@@ -19,30 +19,30 @@ function CoreRules() {
 
       <section className="section">
         <div className="box">
-          <div class="content is-large">
-            <h1>Seja bem vindo!</h1>
+          <div className="content is-large">
+            <h1>Seja bem-vindo!</h1>
             <p>
-              Nesta Sessão iremos aprender sobre as principais regras do sistema
+              Nesta sessão, iremos aprender sobre as principais regras do sistema.
             </p>
-            <div class="content is-medium">
-              <h1>Como São feitas as Rolagens</h1>
+            <div className="content is-medium">
+              <h1>Como são feitas as rolagens</h1>
               <p>
-                Para você fazer as rolagens, vocẽ une seu dado primário (1D20)
-                que é imutável (salvo em raras excessões), com o seu dado
-                secundário do atributo/habilidade específica
+                Para fazer as rolagens, você une seu dado primário (1D20), que é
+                imutável (salvo em raras exceções), com o seu dado secundário do
+                atributo/habilidade específica.
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Atributos Principais</h1>
               <p>
-                Os Atributos principais são o ponto fundamental da criação do
+                Os atributos principais são o ponto fundamental da criação do
                 personagem, pois a maior parte das builds e outros modificadores
-                irão depender desses Atributos
+                irão depender desses atributos.
               </p>
               <li>Atributos Derivados</li>
               <p>
-                Os Atributos derivados são aqueles que unicamente dependem de um
-                atributo principal
+                Os atributos derivados são aqueles que unicamente dependem de um
+                atributo principal.
               </p>
               <h2>Os atributos podem ser separados nas seguintes categorias</h2>
               <h4>Atributos do corpo</h4>
@@ -50,7 +50,7 @@ function CoreRules() {
               <li>Destreza</li>
               <h4>Atributos da mente</h4>
               <li>Inteligência</li>
-              <li>sabedoria</li>
+              <li>Sabedoria</li>
               <li>Conhecimento</li>
               <li>Percepção</li>
               <h4>Atributos de Persistência</h4>
@@ -58,17 +58,17 @@ function CoreRules() {
               <li>Constituição</li>
               <h4>Atributos de Combate</h4>
               <li>Armas de uma mão</li>
-              <li>Armas de duas Mãos</li>
+              <li>Armas de duas mãos</li>
               <li>Pontaria</li>
               <li>Furtividade</li>
               <p>
-                Cada Atributo é governado por um rank (verificar tabela na home)
+                Cada atributo é governado por um rank (verificar tabela na home).
                 <br></br> Tal rank dita o dado respectivo a ser usado, bem como
-                o modificador que será incluído na rolagem
+                o modificador que será incluído na rolagem.
               </p>
               <h6>Modificadores</h6>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Atributos Derivados</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -77,7 +77,7 @@ function CoreRules() {
                 dapibus.
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Subindo de nível</h1>
               <h4>Evolução de atributo</h4>
               <h4>Aumento de HP</h4>
@@ -89,7 +89,7 @@ function CoreRules() {
                 dapibus.
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Economia de ações</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -112,7 +112,7 @@ function CoreRules() {
                   <li>Tea</li>
                   <li>Milk</li>
                 </ul>
-                <p>Lista de areações que você pode fazer</p>
+                <p>Lista de reações que você pode fazer</p>
                 <ul>
                   <li>Coffee</li>
                   <li>Tea</li>
@@ -126,7 +126,7 @@ function CoreRules() {
                 </ul>
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Combate</h1>
               <p>
                 <li>Tipos de dano</li>
@@ -135,7 +135,7 @@ function CoreRules() {
                 <h5>Condições</h5>
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Conjurando Spells</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -144,7 +144,7 @@ function CoreRules() {
                 dapibus.
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Proficiências</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -153,7 +153,7 @@ function CoreRules() {
                 dapibus.
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Criando sua Build e seu Personagem</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -172,7 +172,7 @@ function CoreRules() {
                 </ul>
               </p>
             </div>
-            <div class="content is-medium">
+            <div className="content is-medium">
               <h1>Utilizando Perks</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -186,12 +186,12 @@ function CoreRules() {
           <MasterMenu />
           <br></br>
         </div>
-        <div class="row row-cols-1 row-cols-md-3">
-          <div class="col mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+        <div className="row row-cols-1 row-cols-md-3">
+          <div className="col mb-4">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
@@ -199,11 +199,11 @@ function CoreRules() {
               </div>
             </div>
           </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+          <div className="col mb-4">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
@@ -211,11 +211,11 @@ function CoreRules() {
               </div>
             </div>
           </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+          <div className="col mb-4">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content.
                 </p>
