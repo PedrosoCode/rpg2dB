@@ -43,5 +43,14 @@
     "rarity":"comum",
     "effect":"Uma poção que pode ser usada para envenenar uma arma e causar um dano adicional de + 1d4",
     "tags": ["equipamento", "poção", "medieval", "moderno"]
+  },
+  {
+    "name": "SmartPhone",
+    "type": "eletronico",
+    "cost":"$ 890",
+    "weight":"0.5",
+    "rarity":"comum",
+    "effect":"Um celular que te permite acessar a web, fazer ligações e tudo mais que um dispositvo moderno tem",
+    "tags": ["equipamento", "eletronico", "celular", "moderno"]
   }
 ]
