@@ -52,5 +52,14 @@
     "rarity":"comum",
     "effect":"Um celular que te permite acessar a web, fazer ligações e tudo mais que um dispositvo moderno tem",
     "tags": ["equipamento", "eletronico", "celular", "moderno"]
+  },
+  {
+    "name": "Botas confortáveis",
+    "type": "Vestimenta",
+    "cost":"$ 200",
+    "weight":"0.5",
+    "rarity":"comum",
+    "effect":"Uma bota realmente muito confortável, aumenta seu deslocamento em +5ft",
+    "tags": ["equipamento", "vestimenta", "medieval", "moderno"]
   }
 ]
