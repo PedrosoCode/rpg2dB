@@ -61,5 +61,14 @@
     "rarity":"comum",
     "effect":"Uma bota realmente muito confortável, aumenta seu deslocamento em +5ft",
     "tags": ["equipamento", "vestimenta", "medieval", "moderno"]
+  },
+  {
+    "name": "Picareta",
+    "type": "Equipamento",
+    "cost":"$ 250",
+    "weight":"1.5",
+    "rarity":"comum",
+    "effect":"Uma ferramenta que te permite extrair alguns tipos de metaias",
+    "tags": ["equipamento", "ferramenta", "medieval", "moderno"]
   }
 ]
