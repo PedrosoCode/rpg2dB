@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import JsonWeapons from "../info/Armors.json";
+import React, { useState, useEffect } from "react";
+import JsonArmors from "../info/Armors.json";
 import { Navbar, Footer, MasterMenu } from "../globals/globals";
 
-// Componente Tags para exibir as tags de uma arma
+// Componente Tags para exibir as tags de uma armadura
 function Tags({ tags }) {
   return (
     <div>
@@ -19,6 +19,13 @@ function ArmorsPage() {
   const [searchText, setSearchText] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
   const [filtersActive, setFiltersActive] = useState(false);
+  const [allTags, setAllTags] = useState([]);
+
+  useEffect(() => {
+    // Extrair todas as tags únicas do JSON
+    const tags = Array.from(new Set(JsonArmors.flatMap((armor) => armor.tags)));
+    setAllTags(tags);
+  }, []);
 
   const handleSearchTextChange = (event) => {
     setSearchText(event.target.value);
@@ -27,9 +34,7 @@ function ArmorsPage() {
 
   const handleTagSelect = (tag) => {
     if (selectedTags.includes(tag)) {
-      setSelectedTags(
-        selectedTags.filter((selectedTag) => selectedTag !== tag)
-      );
+      setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
     } else {
       setSelectedTags([...selectedTags, tag]);
     }
@@ -42,13 +47,11 @@ function ArmorsPage() {
     setFiltersActive(false);
   };
 
-  const filteredWeapons = JsonWeapons.filter((weapon) => {
-    const nameMatch = weapon.name
-      .toLowerCase()
-      .includes(searchText.toLowerCase());
+  const filteredArmors = JsonArmors.filter((armor) => {
+    const nameMatch = armor.name.toLowerCase().includes(searchText.toLowerCase());
     const tagsMatch =
       selectedTags.length === 0 ||
-      selectedTags.every((tag) => weapon.tags.includes(tag));
+      selectedTags.every((tag) => armor.tags.includes(tag));
     return nameMatch && tagsMatch;
   });
 
@@ -68,83 +71,23 @@ function ArmorsPage() {
 
           <div>
             <br></br>
-            {/* Começo de um botão de filtro de tags */}
-            <button
-              onClick={() => handleTagSelect("padrao")}
-              style={{
-                backgroundColor: selectedTags.includes("padrao")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("padrao") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Padrão
-            </button>
-            {/* fim de um botão de filtro de tags */}
-            <button
-              onClick={() => handleTagSelect("medieval")}
-              style={{
-                backgroundColor: selectedTags.includes("medieval")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("medieval") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Medieval
-            </button>
-            <button
-              onClick={() => handleTagSelect("moderno")}
-              style={{
-                backgroundColor: selectedTags.includes("moderno")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("moderno") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Moderno
-            </button>
-            <button
-              onClick={() => handleTagSelect("espada")}
-              style={{
-                backgroundColor: selectedTags.includes("espada")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("espada") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Espadas
-            </button>
-            <button
-              onClick={() => handleTagSelect("adagas")}
-              style={{
-                backgroundColor: selectedTags.includes("adagas")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("adagas") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Adagas
-            </button>
+            {/* Criar botões dinamicamente com base nas tags do JSON */}
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => handleTagSelect(tag)}
+                style={{
+                  backgroundColor: selectedTags.includes(tag) ? "green" : "blue",
+                  color: selectedTags.includes(tag) ? "white" : "white",
+                  border: "1px solid #ccc",
+                  borderRadius: "4px",
+                  marginRight: "5px",
+                }}
+              >
+                <br></br>
+                {tag}
+              </button>
+            ))}
           </div>
 
           {/* Botão para limpar filtros */}
@@ -157,7 +100,7 @@ function ArmorsPage() {
           <br></br>
 
           <div className="columns is-multiline">
-            {filteredWeapons.map((json, index) => (
+            {filteredArmors.map((json, index) => (
               <div className="column is-one-quarter" key={index}>
                 <div className="card equips-card">
                   <header className="card-header">
@@ -182,7 +125,7 @@ function ArmorsPage() {
                       <span className="cardDesc">Penalidade de movimentação </span>
                       <span className="cardContent">{json.movPenalt}</span>
                       <br></br>
-                      <span className="cardDesc">vantagens: </span>
+                      <span className="cardDesc">Vantagens: </span>
                       <span className="cardContent">{json.vant}</span>
                       <br></br>
                       <span className="cardDesc">Desvantagens: </span>

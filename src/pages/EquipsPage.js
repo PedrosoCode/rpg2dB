@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import JsonWeapons from "../info/weapons.json";
-import { Navbar, Footer, MasterMenu} from "../globals/globals";
+import { Navbar, Footer, MasterMenu } from "../globals/globals";
 
 // Componente Tags para exibir as tags de uma arma
 function Tags({ tags }) {
@@ -19,6 +19,13 @@ function EquipsPage() {
   const [searchText, setSearchText] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
   const [filtersActive, setFiltersActive] = useState(false);
+  const [allTags, setAllTags] = useState([]);
+
+  useEffect(() => {
+    // Extrair todas as tags únicas do JSON
+    const tags = Array.from(new Set(JsonWeapons.flatMap((weapon) => weapon.tags)));
+    setAllTags(tags);
+  }, []);
 
   const handleSearchTextChange = (event) => {
     setSearchText(event.target.value);
@@ -27,9 +34,7 @@ function EquipsPage() {
 
   const handleTagSelect = (tag) => {
     if (selectedTags.includes(tag)) {
-      setSelectedTags(
-        selectedTags.filter((selectedTag) => selectedTag !== tag)
-      );
+      setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
     } else {
       setSelectedTags([...selectedTags, tag]);
     }
@@ -43,9 +48,7 @@ function EquipsPage() {
   };
 
   const filteredWeapons = JsonWeapons.filter((weapon) => {
-    const nameMatch = weapon.name
-      .toLowerCase()
-      .includes(searchText.toLowerCase());
+    const nameMatch = weapon.name.toLowerCase().includes(searchText.toLowerCase());
     const tagsMatch =
       selectedTags.length === 0 ||
       selectedTags.every((tag) => weapon.tags.includes(tag));
@@ -68,83 +71,23 @@ function EquipsPage() {
 
           <div>
             <br></br>
-            {/* Começo de um botão de filtro de tags */}
-            <button
-              onClick={() => handleTagSelect("padrao")}
-              style={{
-                backgroundColor: selectedTags.includes("padrao")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("padrao") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Padrão
-            </button>
-            {/* fim de um botão de filtro de tags */}
-            <button
-              onClick={() => handleTagSelect("medieval")}
-              style={{
-                backgroundColor: selectedTags.includes("medieval")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("medieval") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Medieval
-            </button>
-            <button
-              onClick={() => handleTagSelect("moderno")}
-              style={{
-                backgroundColor: selectedTags.includes("moderno")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("moderno") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Moderno
-            </button>
-            <button
-              onClick={() => handleTagSelect("espada")}
-              style={{
-                backgroundColor: selectedTags.includes("espada")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("espada") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Espadas
-            </button>
-            <button
-              onClick={() => handleTagSelect("adagas")}
-              style={{
-                backgroundColor: selectedTags.includes("adagas")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("adagas") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Adagas
-            </button>
+            {/* Criar botões dinamicamente com base nas tags do JSON */}
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => handleTagSelect(tag)}
+                style={{
+                  backgroundColor: selectedTags.includes(tag) ? "green" : "blue",
+                  color: selectedTags.includes(tag) ? "white" : "white",
+                  border: "1px solid #ccc",
+                  borderRadius: "4px",
+                  marginRight: "5px",
+                }}
+              >
+                <br></br>
+                {tag}
+              </button>
+            ))}
           </div>
 
           {/* Botão para limpar filtros */}

@@ -1,5 +1,4 @@
-// ContactPage.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import JsonNpcs from "../info/npcs.json";
 import { Navbar, Footer, MasterMenu } from "../globals/globals";
 
@@ -19,6 +18,13 @@ function SheetsPage() {
   const [searchText, setSearchText] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
   const [filtersActive, setFiltersActive] = useState(false);
+  const [allTags, setAllTags] = useState([]);
+
+  useEffect(() => {
+    // Extrair todas as tags únicas do JSON
+    const tags = Array.from(new Set(JsonNpcs.flatMap((npc) => npc.tags)));
+    setAllTags(tags);
+  }, []);
 
   const handleSearchTextChange = (event) => {
     setSearchText(event.target.value);
@@ -27,9 +33,7 @@ function SheetsPage() {
 
   const handleTagSelect = (tag) => {
     if (selectedTags.includes(tag)) {
-      setSelectedTags(
-        selectedTags.filter((selectedTag) => selectedTag !== tag)
-      );
+      setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
     } else {
       setSelectedTags([...selectedTags, tag]);
     }
@@ -42,15 +46,14 @@ function SheetsPage() {
     setFiltersActive(false);
   };
 
-  const filteredNpcs = JsonNpcs.filter((Npcs) => {
-    const nameMatch = Npcs.name
-      .toLowerCase()
-      .includes(searchText.toLowerCase());
+  const filteredNpcs = JsonNpcs.filter((npc) => {
+    const nameMatch = npc.name.toLowerCase().includes(searchText.toLowerCase());
     const tagsMatch =
       selectedTags.length === 0 ||
-      selectedTags.every((tag) => Npcs.tags.includes(tag));
+      selectedTags.every((tag) => npc.tags.includes(tag));
     return nameMatch && tagsMatch;
   });
+
   return (
     <div>
       <Navbar></Navbar>
@@ -68,150 +71,130 @@ function SheetsPage() {
 
           <div>
             <br></br>
-            {/* Começo de um botão de filtro de tags */}
-            <button
-              onClick={() => handleTagSelect("padrao")}
-              style={{
-                backgroundColor: selectedTags.includes("padrao")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("padrao") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Padrão
-            </button>
-            {/* fim de um botão de filtro de tags */}
-            <button
-              onClick={() => handleTagSelect("medieval")}
-              style={{
-                backgroundColor: selectedTags.includes("medieval")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("medieval") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Medieval
-            </button>
+            {/* Criar botões dinamicamente com base nas tags do JSON */}
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => handleTagSelect(tag)}
+                style={{
+                  backgroundColor: selectedTags.includes(tag) ? "green" : "blue",
+                  color: selectedTags.includes(tag) ? "white" : "white",
+                  border: "1px solid #ccc",
+                  borderRadius: "4px",
+                  marginRight: "5px",
+                }}
+              >
+                <br></br>
+                {tag}
+              </button>
+            ))}
           </div>
 
-          {/* Botão para limpar filtros */}
           {filtersActive && (
-            <div>
-              <button onClick={clearFilters}>Limpar Filtros</button>
-              <br></br>
-            </div>
+            <button onClick={clearFilters}>Limpar Filtros</button>
           )}
           <br></br>
           <div className="columns is-multiline">
-            {filteredNpcs.map((json, index) => (
+            {filteredNpcs.map((npc, index) => (
               <div className="column is-half" key={index}>
                 <div className="box centeredContainer">
-                  <Tags tags={json.tags} />
+                  <Tags tags={npc.tags} />
                   <br />
-                  <span className="npcTextTitle">{json.name}</span>
+                  <span className="npcTextTitle">{npc.name}</span>
                   <br></br>
                   <br></br>
                   <span className="npcText">Dado de vida: </span>
-                  <span className="npcJson">{json.lifeDice}</span>
+                  <span className="npcJson">{npc.lifeDice}</span>
                   <br></br>
                   <span className="npcText">HP: </span>
-                  <span className="npcJson">{json.hp}</span>
+                  <span className="npcJson">{npc.hp}</span>
                   <br></br>
                   <span className="npcText">Mana: </span>
-                  <span className="npcJson">{json.mp}</span>
+                  <span className="npcJson">{npc.mp}</span>
                   <br></br>
                   <span className="npcText">atributo de Spellcasting: </span>
-                  <span className="npcJson">{json.atrSpell}</span>
+                  <span className="npcJson">{npc.atrSpell}</span>
                   <br></br>
                   <span className="npcText">Deslocamento: </span>
-                  <span className="npcJson">{json.desloc}</span>
+                  <span className="npcJson">{npc.desloc}</span>
                   <br></br>
                   <span className="npcText">Armadura: </span>
-                  <span className="npcJson">{json.armor}</span>
+                  <span className="npcJson">{npc.armor}</span>
                   <br></br>
                   <span className="npcText">Defesa: </span>
-                  <span className="npcJson">{json.armDef}</span>
+                  <span className="npcJson">{npc.armDef}</span>
                   <br></br>
                   <span className="npcText">Absorção: </span>
-                  <span className="npcJson">{json.armAbsor}</span>
+                  <span className="npcJson">{npc.armAbsor}</span>
                   <br></br>
                   <span className="npcText">Penalidade de movimentação: </span>
-                  <span className="npcJson">{json.movPenalt}</span>
+                  <span className="npcJson">{npc.movPenalt}</span>
                   <br></br>
                   <br></br>
                   <div className="table-container">
-                  <table className="table is-bordered is-striped is-hoverable" style={{ overflowX: 'auto' }}>
-                    <thead>
-                      <tr>
-                        <th colSpan={4}>Atributos</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Força: </td>
-                        <td>{json.for} </td>
-                        <td>Destreza:</td>
-                        <td>{json.des} </td>
-                      </tr>
-                      <tr>
-                        <td>Inteligência:</td>
-                        <td>{json.int} </td>
-                        <td>Conhecimento:</td>
-                        <td>{json.conh} </td>
-                      </tr>
-                      <tr>
-                        <td>Sabedoria:</td>
-                        <td> {json.sab} </td>
-                        <td>Constituição:</td>
-                        <td>{json.con} </td>
-                      </tr>
-                      <tr>
-                        <td>Percepção:</td>
-                        <td>{json.perc} </td>
-                        <td>Carisma: </td>
-                        <td>{json.cari} </td>
-                      </tr>
-                      <tr>
-                        <td>Armas de uma mão:</td>
-                        <td>{json.oneH} </td>
-                        <td>Armas de duas mãos:</td>
-                        <td>{json.twoH} </td>
-                      </tr>
-                      <tr>
-                        <td>Furtividade: </td>
-                        <td>{json.furt} </td>
-                        <td>Pontaria:</td>
-                        <td>{json.pont} </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                    <table className="table is-bordered is-striped is-hoverable" style={{ overflowX: 'auto' }}>
+                      <thead>
+                        <tr>
+                          <th colSpan={4}>Atributos</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Força: </td>
+                          <td>{npc.for} </td>
+                          <td>Destreza:</td>
+                          <td>{npc.des} </td>
+                        </tr>
+                        <tr>
+                          <td>Inteligência:</td>
+                          <td>{npc.int} </td>
+                          <td>Conhecimento:</td>
+                          <td>{npc.conh} </td>
+                        </tr>
+                        <tr>
+                          <td>Sabedoria:</td>
+                          <td> {npc.sab} </td>
+                          <td>Constituição:</td>
+                          <td>{npc.con} </td>
+                        </tr>
+                        <tr>
+                          <td>Percepção:</td>
+                          <td>{npc.perc} </td>
+                          <td>Carisma: </td>
+                          <td>{npc.cari} </td>
+                        </tr>
+                        <tr>
+                          <td>Armas de uma mão:</td>
+                          <td>{npc.oneH} </td>
+                          <td>Armas de duas mãos:</td>
+                          <td>{npc.twoH} </td>
+                        </tr>
+                        <tr>
+                          <td>Furtividade: </td>
+                          <td>{npc.furt} </td>
+                          <td>Pontaria:</td>
+                          <td>{npc.pont} </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <span className="npcText">Vantagens/perks: </span> 
-                  <span className="npcJson">{json.perk}</span>
+                  <span className="npcText">Vantagens/perks: </span>
+                  <span className="npcJson">{npc.perk}</span>
                   <br></br>
-                  <span className="npcText">Spell List: </span> 
-                  <span className="npcJson">{json.spellList}</span>
+                  <span className="npcText">Spell List: </span>
+                  <span className="npcJson">{npc.spellList}</span>
                   <br></br>
-                  <span className="npcText">Armas: </span> 
-                  <span className="npcJson">{json.weapons}</span>
+                  <span className="npcText">Armas: </span>
+                  <span className="npcJson">{npc.weapons}</span>
                   <br></br>
-                  <span className="npcText">inventário: </span> 
-                  <span className="npcJson">{json.inventory}</span>
+                  <span className="npcText">inventário: </span>
+                  <span className="npcJson">{npc.inventory}</span>
                   <br></br>
-                  <span className="npcText">info: </span> 
-                  <span className="npcJson">{json.backstory}</span>
+                  <span className="npcText">info: </span>
+                  <span className="npcJson">{npc.backstory}</span>
                 </div>
               </div>
             ))}
-            {/* fim do card examplo*/}
           </div>
         </div>
       </section>

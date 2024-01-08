@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import spellsData from "../info/spells.json";
 import { Navbar, Footer, MasterMenu } from "../globals/globals";
 
@@ -18,6 +18,13 @@ function SpellsPage() {
   const [searchText, setSearchText] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
   const [filtersActive, setFiltersActive] = useState(false);
+  const [allTags, setAllTags] = useState([]);
+
+  useEffect(() => {
+    // Extrair todas as tags únicas do JSON
+    const tags = Array.from(new Set(spellsData.flatMap((spell) => spell.tags)));
+    setAllTags(tags);
+  }, []);
 
   const handleSearchTextChange = (event) => {
     setSearchText(event.target.value);
@@ -26,9 +33,7 @@ function SpellsPage() {
 
   const handleTagSelect = (tag) => {
     if (selectedTags.includes(tag)) {
-      setSelectedTags(
-        selectedTags.filter((selectedTag) => selectedTag !== tag)
-      );
+      setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
     } else {
       setSelectedTags([...selectedTags, tag]);
     }
@@ -42,9 +47,7 @@ function SpellsPage() {
   };
 
   const filteredSpells = spellsData.filter((spell) => {
-    const nameMatch = spell.name
-      .toLowerCase()
-      .includes(searchText.toLowerCase());
+    const nameMatch = spell.name.toLowerCase().includes(searchText.toLowerCase());
     const tagsMatch =
       selectedTags.length === 0 ||
       selectedTags.every((tag) => spell.tags.includes(tag));
@@ -66,36 +69,23 @@ function SpellsPage() {
 
           <div>
             <br></br>
-            <button
-              onClick={() => handleTagSelect("tag1")}
-              style={{
-                backgroundColor: selectedTags.includes("tag1")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("tag1") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Tag 1
-            </button>
-            <button
-              onClick={() => handleTagSelect("tag2")}
-              style={{
-                backgroundColor: selectedTags.includes("tag2")
-                  ? "green"
-                  : "blue",
-                color: selectedTags.includes("tag2") ? "white" : "white",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                marginRight: "5px",
-              }}
-            >
-              <br></br>
-              Tag 2
-            </button>
+            {/* Criar botões dinamicamente com base nas tags do JSON */}
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => handleTagSelect(tag)}
+                style={{
+                  backgroundColor: selectedTags.includes(tag) ? "green" : "blue",
+                  color: selectedTags.includes(tag) ? "white" : "white",
+                  border: "1px solid #ccc",
+                  borderRadius: "4px",
+                  marginRight: "5px",
+                }}
+              >
+                <br></br>
+                {tag}
+              </button>
+            ))}
           </div>
 
           {filtersActive && (
@@ -113,7 +103,6 @@ function SpellsPage() {
                     <div className="content">
                       <Tags tags={spell.tags} />
                       <br />
-                      {/* Aqui vão os outros campos do arquivo JSON */} 
                       Requisitos: {spell.requisitos}
                       <br />
                       <span className="cardDesc">Custo em Mana </span>
