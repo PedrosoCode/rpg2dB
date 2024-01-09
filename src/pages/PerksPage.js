@@ -104,6 +104,8 @@ function PerksPage() {
                       <br />
                       <span className="perksName">{perks.name}</span>
                       <br></br>
+                      <span className="perksEffect">{perks.requisito}</span>
+                      <br></br><br></br>
                       <span className="perksEffect">{perks.efeito}</span>
                     </div>
                   </div>

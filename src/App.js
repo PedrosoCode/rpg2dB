@@ -18,7 +18,11 @@ import ArmorsPage from './pages/ArmorsPage';
 import ThingsPage from './pages/ThingsPage';
 import CoreRules from './pages/CoreRules';
 import Backgrounds from './pages/Backgrounds';
+/* 
+Aqui vem importações texts
+*/
 
+import LevellingUp from './pages/texts/LevellingUp';
 
 /* 
 o comando para reverter as alterações é git reset --hard HEAD
@@ -41,6 +45,7 @@ function App() {
         <Route path="/ThingsPage" element={<ThingsPage />} />
         <Route path="/CoreRules" element={<CoreRules />} />
         <Route path="/Backgrounds" element={<Backgrounds />} />
+        <Route path="/TestPage" element={<TestPage />} />
       </Routes>
     </BrowserRouter>
   );

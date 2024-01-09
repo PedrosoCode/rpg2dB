@@ -30,7 +30,7 @@
     "atrAcerto": "1H ou 2H",
     "atrBonus": "FOR ou DEX",
     "throw": "Não",
-    "damage": "1D6+BON ou 1D6+2+BON",
+    "damage": "1D8+BON ou 1D8+2+BON",
     "dtype": "Cortante",
     "tags": [
       "Padrao",
@@ -44,7 +44,7 @@
     "atrAcerto": "1H ou 2H",
     "atrBonus": "FOR ou DEX",
     "throw": "Não",
-    "damage": "1D6+BON ou 1D6+2+BON",
+    "damage": "1D4+BON ou 1D4+2+BON",
     "dtype": "Cortante",
     "tags": [
       "Padrao",
@@ -54,8 +54,8 @@
   },
   {
     "name": "Rapiera",
-    "atrAcerto": "1H ou 2H",
-    "atrBonus": "FOR ou DEX",
+    "atrAcerto": "1H",
+    "atrBonus": "DEX",
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
@@ -69,7 +69,7 @@
     "atrAcerto": "1H ou 2H",
     "atrBonus": "FOR ou DEX",
     "throw": "Não",
-    "damage": "1D6+BON ou 1D6+2+BON",
+    "damage": "1D4+BON ou 1D4+2+BON",
     "dtype": "Cortante",
     "tags": [
       "Peixe",
@@ -95,11 +95,13 @@
     "atrAcerto": "1H",
     "atrBonus": "DEX",
     "throw": "Não",
-    "damage": "1D4 de fogo + 1D6 Cortante",
+    "damage": "1D4 de fogo + 1D6 Cortante + BON",
     "dtype": "Cortante/Fogo",
     "tags": [
       "rapiera",
-      "medieval"
+      "medieval",
+      "especial",
+      "fogo"
     ]
   },
   {

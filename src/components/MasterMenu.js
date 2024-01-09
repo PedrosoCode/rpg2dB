@@ -46,6 +46,9 @@ function MasterMenu() {
                 <li>
                   <Link to="/PerksPage">Lista de Perks</Link>
                 </li>
+                <li>
+                  <Link to="/TestPage">Teste</Link>
+                </li>
               </ul>
             </li>
           </ul>

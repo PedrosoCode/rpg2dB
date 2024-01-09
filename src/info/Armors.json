@@ -7,7 +7,10 @@
     "movPenalt": "Nenhuma",
     "vant": "Nenhuma",
     "desvant": "Nenhuma",
-    "tags": ["Leve", "Medieval"]
+    "tags": [
+      "Leve",
+      "Medieval"
+    ]
   },
   {
     "name": "Armadura de Placas",
@@ -17,7 +20,10 @@
     "movPenalt": "-10t",
     "vant": "Nenhuma",
     "desvant": "Nenhuma",
-    "tags": ["Medieval", "Pesada"]
+    "tags": [
+      "Medieval",
+      "Pesada"
+    ]
   },
   {
     "name": "Cota de malha",
@@ -27,7 +33,10 @@
     "movPenalt": "-5t",
     "vant": "Nenhuma",
     "desvant": "Nenhuma",
-    "tags": ["Medieval", "Pesada"]
+    "tags": [
+      "Medieval",
+      "Pesada"
+    ]
   },
   {
     "name": "Manto élfico",
@@ -37,7 +46,10 @@
     "movPenalt": "nenhuma",
     "vant": "nenhuma",
     "desvant": "nenhuma",
-    "tags": ["Medieval", "Leve"]
+    "tags": [
+      "Medieval",
+      "Leve"
+    ]
   },
   {
     "name": "Roupa Acolchoada",
@@ -47,7 +59,10 @@
     "movPenalt": "nenhuma",
     "vant": "nenhuma",
     "desvant": "nenhuma",
-    "tags": ["Medieval", "Leve"]
+    "tags": [
+      "Medieval",
+      "Leve"
+    ]
   },
   {
     "name": "Colete da polícia",
@@ -57,7 +72,11 @@
     "movPenalt": "nenhuma",
     "vant": "+1 de dano adicional absorvido por armas de fogo",
     "desvant": "nenhuma",
-    "tags": ["Moderno", "Leve", "Policia"]
+    "tags": [
+      "Moderno",
+      "Leve",
+      "Policia"
+    ]
   },
   {
     "name": "Colete do exército",
@@ -67,7 +86,11 @@
     "movPenalt": "nenhuma",
     "vant": "+2 de dano adicional absorvido por armas de fogo",
     "desvant": "nenhuma",
-    "tags": ["Moderno", "Pesado", "Militar"]
+    "tags": [
+      "Moderno",
+      "Pesado",
+      "Militar"
+    ]
   },
   {
     "name": "Armadura de placas improvisada",
@@ -77,7 +100,10 @@
     "movPenalt": "nenhuma",
     "vant": "nenhuma",
     "desvant": "nenhuma",
-    "tags": ["Medieval", "Media"]
+    "tags": [
+      "Medieval",
+      "Media"
+    ]
   },
   {
     "name": "teste1",
@@ -87,6 +113,9 @@
     "movPenalt": "damage",
     "vant": "teste4",
     "desvant": "teste5",
-    "tags": ["perc", "cari"]
+    "tags": [
+      "Teste",
+      "Modelo"
+    ]
   }
 ]

@@ -1,11 +1,11 @@
 // ContactPage.js
 import React from 'react';
+import LevellingUp from './texts/LevellingUp';
 
 function TestPage() {
   return (
     <div>
-      <h1>Página de teste</h1>
-      {/* Conteúdo da página de contato */}
+      <LevellingUp />
     </div>
   );
 }

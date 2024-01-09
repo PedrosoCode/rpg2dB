@@ -7,9 +7,10 @@
     "rarity": "comum",
     "effect": "Uma poção que cura 1d6 de vida",
     "tags": [
-      "pocao",
+      "pocão",
       "alquimia",
-      "comum"
+      "comum",
+      "cura"
     ]
   },
   {
@@ -100,10 +101,24 @@
     "cost": "$ 250",
     "weight": "1.5",
     "rarity": "comum",
-    "effect": "Uma ferramenta que te permite extrair alguns tipos de metaias",
+    "effect": "Uma ferramenta que te permite extrair alguns tipos de metais",
     "tags": [
       "equipamento",
       "ferramenta",
+      "medieval",
+      "moderno"
+    ]
+  },
+  {
+    "name": "Ervas Medicinais",
+    "type": "material",
+    "cost": "$ 20",
+    "weight": "1.0",
+    "rarity": "comum",
+    "effect": "Um punhado de ervas que podem ser usadas para criar itens de cura",
+    "tags": [
+      "material",
+      "cura",
       "medieval",
       "moderno"
     ]

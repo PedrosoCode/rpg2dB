@@ -1,12 +1,38 @@
 [
   {
-    "name": "teste1",
-    "efeito": "teste1",
-    "tags": ["perc", "cari"]
+    "name": "Modelo",
+    "efeito": "Aqui deve ser preenchido",
+    "requisito": "Aqui vem requisitos",
+    "tags": [
+      "teste"
+    ]
   },
   {
-    "name": "teste2",
-    "efeito": "teste2",
-    "tags": ["int", "perc"]
+    "name": "Ricochete",
+    "efeito": "Ao utilizar armas de projéteis, você pode ricochetear em superfícies metálicas para atingir alvos em cobetura, para isso role seu atributo pontaria, com desvantagem",
+    "requisito": "Pontaria Rank 8",
+    "tags": [
+      "Pontaria",
+      "Combate"
+    ]
+  },
+  {
+    "name": "Adivinhação",
+    "efeito": "Você pode tentar adivinhar senhas e combinações do nada e ter a chance de acertar, para isso role seu atributo sorte, essa habilidade pode ser usada duas vezes por descanso",
+    "requisito": "Sorte Rank 5",
+    "tags": [
+      "Sorte",
+      "Utilidade"
+    ]
+  },
+  {
+    "name": "Mestre de armas brancas",
+    "efeito": "Escolha um categoria de armas brancas, como espada, adaga, etc... Você ganha +1 de modificador para adicionar em rolagens de acerto e dano | esse Perk pode ser comprado várias vezes com a armas de diferentes categorias",
+    "requisito": "1H ou 2H rank 2",
+    "tags": [
+      "1H",
+      "2H",
+      "Combate"
+    ]
   }
 ]
