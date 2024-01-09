@@ -1,7 +1,7 @@
 [
   {
     "name": "Mísseis Mágicos",
-    "cost":"15 mp",
+    "cost": "15 mp",
     "requisitos": "Gesto, Som",
     "casting": "1 ação",
     "reach": "65ft",
@@ -12,11 +12,14 @@
     "pluseff2": "+15 se quiser Mudar o dano de cada Para 1d8",
     "pluseff3": "Indefinido",
     "pluseff4": "Indefinido",
-    "tags": ["tag1", "Tag3"]
+    "tags": [
+      "tag1",
+      "Tag3"
+    ]
   },
   {
     "name": "Firebolt",
-    "cost":"5 mp",
+    "cost": "5 mp",
     "requisitos": "Gesto, Som",
     "casting": "1 Ação",
     "reach": "40ft",
@@ -27,11 +30,14 @@
     "pluseff2": "pluseff2",
     "pluseff3": "pluseff3",
     "pluseff4": "pluseff4",
-    "tags": ["tag1", "Tag3"]
+    "tags": [
+      "tag1",
+      "Tag3"
+    ]
   },
   {
     "name": "name3",
-    "cost":"",
+    "cost": "",
     "requisitos": "requisitos",
     "casting": "casting",
     "reach": "reach",
@@ -42,6 +48,9 @@
     "pluseff2": "pluseff2",
     "pluseff3": "pluseff3",
     "pluseff4": "pluseff4",
-    "tags": ["tag1", "Tag3"]
+    "tags": [
+      "tag1",
+      "Tag3"
+    ]
   }
 ]

@@ -6,8 +6,11 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "excec":"",
-    "tags": ["padrao", "Tag3"]
+    "excec": "",
+    "tags": [
+      "padrao",
+      "Tag3"
+    ]
   },
   {
     "name": "Espada Curta",
@@ -16,7 +19,11 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "tags": ["tag1", "Tag3"]
+    "tags": [
+      "Padrao",
+      "Espada",
+      "1H"
+    ]
   },
   {
     "name": "Espada Longa",
@@ -25,7 +32,12 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "tags": ["Tag3", "tag2"]
+    "tags": [
+      "Padrao",
+      "Espada",
+      "2H",
+      "1H"
+    ]
   },
   {
     "name": "Adaga",
@@ -34,7 +46,11 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "tags": ["tag1", "Tag3"]
+    "tags": [
+      "Padrao",
+      "1H",
+      "Adaga"
+    ]
   },
   {
     "name": "Rapiera",
@@ -43,7 +59,10 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "tags": ["Tag3", "tag2"]
+    "tags": [
+      "Padrao",
+      "1H"
+    ]
   },
   {
     "name": "Peixe",
@@ -52,7 +71,10 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "tags": ["Tag3", "tag2"]
+    "tags": [
+      "Peixe",
+      "meme"
+    ]
   },
   {
     "name": "Machado",
@@ -61,16 +83,12 @@
     "throw": "Não",
     "damage": "1D6+BON ou 1D6+2+BON",
     "dtype": "Cortante",
-    "tags": ["tag1", "Tag3"]
-  },
-  {
-    "name": "greatsword",
-    "atrAcerto": "2H",
-    "atrBonus": "FOR ou DEX",
-    "throw": "Não",
-    "damage": "1D6+BON ou 1D6+2+BON",
-    "dtype": "Cortante",
-    "tags": ["tag1", "Tag3"]
+    "tags": [
+      "Padrao",
+      "Machado",
+      "1H",
+      "2H"
+    ]
   },
   {
     "name": "Demon's Rapier",
@@ -79,7 +97,10 @@
     "throw": "Não",
     "damage": "1D4 de fogo + 1D6 Cortante",
     "dtype": "Cortante/Fogo",
-    "tags": ["rapiera", "medieval"]
+    "tags": [
+      "rapiera",
+      "medieval"
+    ]
   },
   {
     "name": "Foice",
@@ -88,6 +109,9 @@
     "throw": "Não",
     "damage": "1D8",
     "dtype": "Perfurante ou Cortante",
-    "tags": ["foice", "medieval"]
+    "tags": [
+      "foice",
+      "medieval"
+    ]
   }
 ]

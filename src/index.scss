@@ -1,3 +1,5 @@
+$bg-color: rgb(84, 84, 245);
+
 $cor-primaria: rgb(0, 0, 255);
 $cor-secundaria: #e74c3c;
 $cor-card: #2ecc71;
@@ -20,7 +22,7 @@ body {
 }
 
 .MainBG {
-  background-color: $cor-primaria;
+  background-color: $bg-color;
 }
 
 code {

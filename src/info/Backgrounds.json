@@ -9,7 +9,11 @@
     "starterPack": "Uma poção que cura 1d6 de vida",
     "plusEffect": "Uma poção vida",
     "description": "Uma poção que cura 1d6 de vida",
-    "tags": ["pocao", "alquimia", "comum"]
+    "tags": [
+      "pocao",
+      "alquimia",
+      "comum"
+    ]
   },
   {
     "name": "ladrão",
@@ -21,6 +25,10 @@
     "starterPack": "Uma poção que cura 1d6 de vida",
     "plusEffect": "Uma poção vida",
     "description": "Uma poção que cura 1d6 de vida",
-    "tags": ["pocao", "alquimia", "comum"]
+    "tags": [
+      "pocao",
+      "alquimia",
+      "comum"
+    ]
   }
 ]

@@ -1,79 +1,108 @@
 [
   {
     "name": "pistola",
-    "reach":"120ft",
+    "reach": "120ft",
     "damage": "1d4+1",
-    "dtype":"Perfurante",
-    "roll":"Pontaria",
-    "fireRate":"3",
-    "size":"12",
-    "reload":"ação",
-    "tags": ["moderno", "pistola"]
+    "dtype": "Perfurante",
+    "roll": "Pontaria",
+    "fireRate": "3",
+    "size": "12",
+    "reload": "ação",
+    "tags": [
+      "moderno",
+      "pistola",
+      "Padrao"
+    ]
   },
   {
     "name": "revolver",
-    "reach":"140ft",
+    "reach": "140ft",
     "damage": "1d6+1",
-    "dtype":"Perfurante",
-    "roll":"Pontaria",
-    "fireRate":"2",
-    "size":"6",
-    "reload":"ação",
-    "tags": ["moderno", "revolver", "medieval"]
+    "dtype": "Perfurante",
+    "roll": "Pontaria",
+    "fireRate": "2",
+    "size": "6",
+    "reload": "ação",
+    "tags": [
+      "moderno",
+      "revolver",
+      "medieval",
+      "Padrao"
+    ]
   },
   {
     "name": "Flintlock",
-    "reach":"75ft",
+    "reach": "75ft",
     "damage": "1d4+4",
-    "dtype":"Perfurante",
-    "roll":"Pontaria",
-    "fireRate":"1",
-    "size":"1",
-    "reload":"ação",
-    "tags": ["medieval"]
+    "dtype": "Perfurante",
+    "roll": "Pontaria",
+    "fireRate": "1",
+    "size": "1",
+    "reload": "ação",
+    "tags": [
+      "medieval",
+      "Padrao"
+    ]
   },
   {
     "name": "Mosquete",
-    "reach":"145ft",
+    "reach": "145ft",
     "damage": "1d6+4",
-    "dtype":"Perfurante",
-    "roll":"Pontaria",
-    "fireRate":"1",
-    "size":"1",
-    "reload":"1 ação menor e uma ação",
-    "tags": ["medieval", "rifle"]
+    "dtype": "Perfurante",
+    "roll": "Pontaria",
+    "fireRate": "1",
+    "size": "1",
+    "reload": "1 ação menor e uma ação",
+    "tags": [
+      "medieval",
+      "rifle",
+      "Padrao"
+    ]
   },
   {
     "name": "Fuzil Antimatéria",
-    "reach":"300ft",
+    "reach": "300ft",
     "damage": "1d12+5",
-    "dtype":"Perfurante",
-    "roll":"Pontaria",
-    "fireRate":"1",
-    "size":"1",
-    "reload":"uma ação",
-    "tags": ["moderno", "rifle", "pesado"]
+    "dtype": "Perfurante",
+    "roll": "Pontaria",
+    "fireRate": "1",
+    "size": "1",
+    "reload": "uma ação",
+    "tags": [
+      "moderno",
+      "rifle",
+      "pesado",
+      "Padrao"
+    ]
   },
   {
     "name": "Fuzil semi-automatico",
-    "reach":"300ft",
+    "reach": "300ft",
     "damage": "1d8+2",
-    "dtype":"Perfurante",
-    "roll":"Pontaria",
-    "fireRate":"1",
-    "size":"1",
-    "reload":"uma ação",
-    "tags": ["moderno", "rifle", "pesado"]
+    "dtype": "Perfurante",
+    "roll": "Pontaria",
+    "fireRate": "1",
+    "size": "1",
+    "reload": "uma ação",
+    "tags": [
+      "moderno",
+      "rifle",
+      "pesado",
+      "Padrao"
+    ]
   },
   {
     "name": "teste1",
-    "reach":"teste2",
+    "reach": "teste2",
     "damage": "teste3",
-    "dtype":"damage",
-    "roll":"teste4",
-    "fireRate":"teste5",
-    "size":"teste6",
-    "reload":"teste7",
-    "tags": ["perc", "cari"]
+    "dtype": "damage",
+    "roll": "teste4",
+    "fireRate": "teste5",
+    "size": "teste6",
+    "reload": "teste7",
+    "tags": [
+      "perc",
+      "cari"
+    ]
   }
 ]

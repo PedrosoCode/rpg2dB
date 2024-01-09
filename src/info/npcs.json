@@ -10,7 +10,6 @@
     "armDef": "16",
     "armAbsor": "3",
     "movPenalt": "-10ft",
-
     "for": "1d20",
     "des": "1d20+3",
     "int": "1d16",
@@ -23,13 +22,15 @@
     "twoH": "1d16",
     "furt": "1d6",
     "pont": "1d12",
-
     "perk": "PLot armor",
     "spellList": "",
     "weapons": "",
     "inventory": "",
     "backstory": "",
-    "tags": ["padrao", "Tag3"]
+    "tags": [
+      "padrao",
+      "Tag3"
+    ]
   },
   {
     "name": "somebody",
@@ -42,7 +43,6 @@
     "armDef": "12",
     "armAbsor": "1",
     "movPenalt": "nenhuma",
-
     "for": "1d16",
     "des": "1d6",
     "int": "1d6",
@@ -55,13 +55,15 @@
     "twoH": "1d12",
     "furt": "1d10",
     "pont": "1d4",
-
     "perk": "Conjurador rápido",
     "spellList": "Mísseis mágicos, bola de fogo, controlar agua, derreter armaduras",
     "weapons": "adaga, espada, cajado",
     "inventory": "2 batatas cozidas, uma maça, uma torta, 12 flechas com pena de pavão e 3 tochas",
     "backstory": "Lorem Ipsum Dolor sit ammet",
-    "tags": ["padrao", "Tag3"]
+    "tags": [
+      "padrao",
+      "Tag3"
+    ]
   },
   {
     "name": "Outro alguem",
@@ -74,7 +76,6 @@
     "armDef": "16",
     "armAbsor": "3",
     "movPenalt": "-10ft",
-
     "for": "1d20",
     "des": "1d20+3",
     "int": "1d16",
@@ -87,12 +88,14 @@
     "twoH": "1d16",
     "furt": "1d6",
     "pont": "1d12",
-
     "perk": "PLot armor",
     "spellList": "",
     "weapons": "",
     "inventory": "",
     "backstory": "",
-    "tags": ["medieval", "Tag3"]
+    "tags": [
+      "medieval",
+      "Tag3"
+    ]
   }
 ]

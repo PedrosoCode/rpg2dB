@@ -2,73 +2,110 @@
   {
     "name": "poção de cura",
     "type": "Poção",
-    "cost":"$ 25",
-    "weight":"0.5",
-    "rarity":"comum",
-    "effect":"Uma poção que cura 1d6 de vida",
-    "tags": ["pocao", "alquimia", "comum"]
+    "cost": "$ 25",
+    "weight": "0.5",
+    "rarity": "comum",
+    "effect": "Uma poção que cura 1d6 de vida",
+    "tags": [
+      "pocao",
+      "alquimia",
+      "comum"
+    ]
   },
   {
     "name": "Lingote de Ouro",
     "type": "material",
-    "cost":"$ 200",
-    "weight":"1.0",
-    "rarity":"raro",
-    "effect":"Uma porção de ouro em formato de Lingote",
-    "tags": ["mineral", "alquimia", "material"]
+    "cost": "$ 200",
+    "weight": "1.0",
+    "rarity": "raro",
+    "effect": "Uma porção de ouro em formato de Lingote",
+    "tags": [
+      "mineral",
+      "alquimia",
+      "material"
+    ]
   },
   {
     "name": "Lingote de ferro",
     "type": "material",
-    "cost":"$ 50",
-    "weight":"1.0",
-    "rarity":"comum",
-    "effect":"Uma porção de ferro em formato de Lingote",
-    "tags": ["mineral", "alquimia", "material"]
+    "cost": "$ 50",
+    "weight": "1.0",
+    "rarity": "comum",
+    "effect": "Uma porção de ferro em formato de Lingote",
+    "tags": [
+      "mineral",
+      "alquimia",
+      "material"
+    ]
   },
   {
     "name": "Mochila",
     "type": "Equipamento",
-    "cost":"$ 80",
-    "weight":"1.0",
-    "rarity":"comum",
-    "effect":"Uma mochila que aumenta em 20 sua capacidade de inventário",
-    "tags": ["equipamento", "mochila", "medieval", "moderno"]
+    "cost": "$ 80",
+    "weight": "1.0",
+    "rarity": "comum",
+    "effect": "Uma mochila que aumenta em 20 sua capacidade de inventário",
+    "tags": [
+      "equipamento",
+      "mochila",
+      "medieval",
+      "moderno"
+    ]
   },
   {
     "name": "Poção de veneno",
     "type": "Poção",
-    "cost":"$ 85",
-    "weight":"0.5",
-    "rarity":"comum",
-    "effect":"Uma poção que pode ser usada para envenenar uma arma e causar um dano adicional de + 1d4",
-    "tags": ["equipamento", "poção", "medieval", "moderno"]
+    "cost": "$ 85",
+    "weight": "0.5",
+    "rarity": "comum",
+    "effect": "Uma poção que pode ser usada para envenenar uma arma e causar um dano adicional de + 1d4",
+    "tags": [
+      "equipamento",
+      "poção",
+      "medieval",
+      "moderno"
+    ]
   },
   {
     "name": "SmartPhone",
     "type": "eletronico",
-    "cost":"$ 890",
-    "weight":"0.5",
-    "rarity":"comum",
-    "effect":"Um celular que te permite acessar a web, fazer ligações e tudo mais que um dispositvo moderno tem",
-    "tags": ["equipamento", "eletronico", "celular", "moderno"]
+    "cost": "$ 890",
+    "weight": "0.5",
+    "rarity": "comum",
+    "effect": "Um celular que te permite acessar a web, fazer ligações e tudo mais que um dispositvo moderno tem",
+    "tags": [
+      "equipamento",
+      "eletronico",
+      "celular",
+      "moderno"
+    ]
   },
   {
     "name": "Botas confortáveis",
     "type": "Vestimenta",
-    "cost":"$ 200",
-    "weight":"0.5",
-    "rarity":"comum",
-    "effect":"Uma bota realmente muito confortável, aumenta seu deslocamento em +5ft",
-    "tags": ["equipamento", "vestimenta", "medieval", "moderno"]
+    "cost": "$ 200",
+    "weight": "0.5",
+    "rarity": "comum",
+    "effect": "Uma bota realmente muito confortável, aumenta seu deslocamento em +5ft",
+    "tags": [
+      "equipamento",
+      "vestimenta",
+      "medieval",
+      "moderno"
+    ]
   },
   {
     "name": "Picareta",
     "type": "Equipamento",
-    "cost":"$ 250",
-    "weight":"1.5",
-    "rarity":"comum",
-    "effect":"Uma ferramenta que te permite extrair alguns tipos de metaias",
-    "tags": ["equipamento", "ferramenta", "medieval", "moderno"]
+    "cost": "$ 250",
+    "weight": "1.5",
+    "rarity": "comum",
+    "effect": "Uma ferramenta que te permite extrair alguns tipos de metaias",
+    "tags": [
+      "equipamento",
+      "ferramenta",
+      "medieval",
+      "moderno"
+    ]
   }
 ]
