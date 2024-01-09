@@ -9,6 +9,7 @@ function HomePage() {
     <div className="MainBG">
       <Navbar />
       <section className="section is-medium mainhead">
+      <br></br><br></br>
         <h1 className="headtext">Uma Breve introdução ao sistema RPG2D</h1>
         <h2 className="headtext">
           Um sistema <strong>Universal, e simples</strong>, Para a sua mesa de

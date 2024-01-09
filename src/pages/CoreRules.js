@@ -8,12 +8,14 @@ import Welcome from "./texts/Welcome";
 import LevellingUp from "./texts/LevellingUp";
 import LifeDice from "./texts/LifeDice";
 import MainAttributes from "./texts/MainAttributes";
+import CombatRules from "./texts/CombatRules";
 
 function CoreRules() {
   return (
     <div className="MainBG">
       <Navbar />
       <section className="section is-medium daRulesHead">
+        <br></br><br></br>
         <h1 className="headtext">Regras de jogo</h1>
         <h2 className="headtext">
           Todos os <strong>principais pontos </strong> para compreender a lógica
@@ -29,24 +31,8 @@ function CoreRules() {
             <p>
               Nesta sessão, iremos aprender sobre as principais regras do sistema.
             </p>
-            <div className="content is-medium">
-              <h1>Como são feitas as rolagens</h1>
-              <p>
-                Para fazer as rolagens, você une seu dado primário (1D20), que é
-                imutável (salvo em raras exceções), com o seu dado secundário do
-                atributo/habilidade específica.
-              </p>
-            </div>
             <MainAttributes />
-            <div className="content is-medium">
-              <h1>Combate</h1>
-              <p>
-                <li>Tipos de dano</li>
-              </p>
-              <p>
-                <h5>Condições</h5>
-              </p>
-            </div>
+            <CombatRules />
             <LifeDice />
             <LevellingUp />
           </div>
