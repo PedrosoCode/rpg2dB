@@ -223,3 +223,8 @@ code {
   text-align: center;
 }
 
+.npcJsonScrollable {
+  max-height: 100px; /* Defina a altura máxima desejada */
+  overflow-y: auto; /* Habilita a barra de rolagem vertical quando o conteúdo ultrapassar a altura máxima */
+  white-space: pre-wrap; /* Permite quebras de linha conforme necessário */
+}

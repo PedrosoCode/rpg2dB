@@ -191,7 +191,22 @@ function SheetsPage() {
                   <span className="npcJson">{npc.inventory}</span>
                   <br></br>
                   <span className="npcText">info: </span>
-                  <span className="npcJson">{npc.backstory}</span>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Clique para Habilitar informações adicionais
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body npcJson">
+                          {npc.backstory}
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
                 </div>
               </div>
             ))}
