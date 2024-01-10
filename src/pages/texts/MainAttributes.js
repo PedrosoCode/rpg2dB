@@ -12,14 +12,17 @@ function MainAttributes() {
             <h4>Atributos do corpo</h4>
             <li>Força</li>
             <li>Destreza</li>
+            <br></br>
             <h4>Atributos da mente</h4>
             <li>Inteligência</li>
             <li>Sabedoria</li>
             <li>Conhecimento</li>
             <li>Percepção</li>
+            <br></br>
             <h4>Atributos de Persistência</h4>
             <li>Carisma</li>
             <li>Constituição</li>
+            <br></br>
             <h4>Atributos de Combate</h4>
             <li>Armas de uma mão</li>
             <li>Armas de duas mãos</li>
