@@ -9,6 +9,7 @@ import LevellingUp from "./texts/LevellingUp";
 import LifeDice from "./texts/LifeDice";
 import MainAttributes from "./texts/MainAttributes";
 import CombatRules from "./texts/CombatRules";
+import HowToBuild from "./texts/HowToBuild";
 
 function CoreRules() {
   return (
@@ -32,6 +33,7 @@ function CoreRules() {
               Nesta sessão, iremos aprender sobre as principais regras do sistema.
             </p>
             <MainAttributes />
+            <HowToBuild />
             <CombatRules />
             <LifeDice />
             <LevellingUp />

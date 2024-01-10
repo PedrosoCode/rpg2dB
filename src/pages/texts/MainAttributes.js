@@ -8,11 +8,6 @@ function MainAttributes() {
                 personagem, pois a maior parte das builds e outros modificadores
                 irão depender desses atributos.
             </p>
-            <li>Atributos Derivados</li>
-            <p>
-                Os atributos derivados são aqueles que unicamente dependem de um
-                atributo principal.
-            </p>
             <h3>Os atributos podem ser separados nas seguintes categorias</h3>
             <h4>Atributos do corpo</h4>
             <li>Força</li>
@@ -36,7 +31,11 @@ function MainAttributes() {
                 <br></br> Tal rank dita o dado respectivo a ser usado, bem como
                 o modificador que será incluído na rolagem.
             </p>
-            <h6>Modificadores</h6>
+            <li>Atributos Derivados</li>
+            <p>
+                Os atributos derivados são aqueles que unicamente dependem de um
+                atributo principal, como por exemplo Bônus no ataque que varia de acordo com Força ou Destreza
+            </p>
         </div>
     );
 }
