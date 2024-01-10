@@ -34,5 +34,13 @@
       "2H",
       "Combate"
     ]
+  },
+  {
+    "name": "Expert de conhecimento específico",
+    "efeito": "Você escolhe um tópico especíco, você rolas todos os dados do atributo conhecimento referente  esse tópico com vantagem",
+    "requisito": "Conhecimento Rank 3",
+    "tags": [
+      "teste"
+    ]
   }
 ]

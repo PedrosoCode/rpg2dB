@@ -26,7 +26,7 @@ function HowToBuild() {
                 no quesito de Spellcasting, se você quer fazer o roleplay de um personagem que ainda está aprendendo, invista propositalmente um valor mais baixo
             </p>
             <li>Anote os seus Perks, Caso você já comece o jogo com algum, consulte o mestre</li>
-            <li>Anote os seeus Spels, Caso você já comeco o jogo com algum, Consulte o mestre</li>
+            <li>Anote os seus Spells, Caso você já comece o jogo com algum, Consulte o mestre</li>
             <li>E por fim, determine o Inventário inicial do seu personagem</li>
         </div>
     );
