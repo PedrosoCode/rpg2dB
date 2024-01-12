@@ -122,5 +122,19 @@
       "medieval",
       "moderno"
     ]
+  },
+  {
+    "name": "Chapéu Daora",
+    "type": "Vestimenta",
+    "cost": "$ 450",
+    "weight": "0.5",
+    "rarity": "raro",
+    "effect": "Um chapéu muito bonito, lhe garante +2 de modificador no carisma",
+    "tags": [
+      "vestimenta",
+      "moderno",
+      "medieval",
+      "aesthetic"
+    ]
   }
 ]

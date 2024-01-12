@@ -99,5 +99,38 @@
       "Medieval",
       "Guarda"
     ]
+  },
+  {
+    "name": "Modelo",
+    "lifeDice": "1d0",
+    "hp": "00",
+    "mp": "00",
+    "atrSpell": "Atributo",
+    "desloc": "30ft",
+    "armor": "Armadura",
+    "armDef": "00",
+    "armAbsor": "00",
+    "movPenalt": "00ft",
+    "for": "1d0",
+    "des": "1d0",
+    "int": "1d0",
+    "conh": "1d0",
+    "sab": "1d0",
+    "con": "1d0",
+    "perc": "1d0",
+    "cari": "1d0",
+    "oneH": "1d0",
+    "twoH": "1d0",
+    "furt": "1d0",
+    "pont": "1d0",
+    "perk": "perks",
+    "spellList": "",
+    "weapons": "",
+    "inventory": "",
+    "backstory": "",
+    "tags": [
+      "padrao",
+      "teste"
+    ]
   }
 ]

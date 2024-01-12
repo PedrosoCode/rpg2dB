@@ -92,6 +92,20 @@
     ]
   },
   {
+    "name": "Mosquete a vapor",
+    "reach": "130ft",
+    "damage": "1d10+2",
+    "dtype": "Perfurante",
+    "roll": "Pontaria",
+    "fireRate": "1",
+    "size": "1",
+    "reload": "1 ação, 1 ação menor",
+    "tags": [
+      "Steampunk",
+      "Rifle"
+    ]
+  },
+  {
     "name": "teste1",
     "reach": "teste2",
     "damage": "teste3",
