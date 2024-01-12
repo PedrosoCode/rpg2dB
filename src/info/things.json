@@ -136,5 +136,19 @@
       "medieval",
       "aesthetic"
     ]
+  },
+  {
+    "name": "Mini exoesqueleto",
+    "type": "Vestimenta",
+    "cost": "$ 850",
+    "weight": "2.0",
+    "rarity": "raro",
+    "effect": "Um exoesqueleto para seu corpo, concede +2 de modificador de força",
+    "tags": [
+      "vestimenta",
+      "moderno",
+      "futurista",
+      "equipamento"
+    ]
   }
 ]
