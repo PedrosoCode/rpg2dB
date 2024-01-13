@@ -150,5 +150,19 @@
       "futurista",
       "equipamento"
     ]
+  },
+  {
+    "name": "Grande exoesqueleto",
+    "type": "Vestimenta",
+    "cost": "$ 1850",
+    "weight": "5.0",
+    "rarity": "raro",
+    "effect": "Um exoesqueleto para seu corpo, concede +6 de modificador de força",
+    "tags": [
+      "vestimenta",
+      "moderno",
+      "futurista",
+      "equipamento"
+    ]
   }
 ]
