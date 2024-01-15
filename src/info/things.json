@@ -164,5 +164,19 @@
       "futurista",
       "equipamento"
     ]
+  },
+  {
+    "name": "Capacete resistente",
+    "type": "Vestimenta",
+    "cost": "$ 150",
+    "weight": "3.0",
+    "rarity": "raro",
+    "effect": "Um capacete que lhe concede proteção a impactos, +1 de Absorção de dano",
+    "tags": [
+      "vestimenta",
+      "moderno",
+      "medieval",
+      "equipamento"
+    ]
   }
 ]
