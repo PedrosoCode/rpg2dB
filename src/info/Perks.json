@@ -42,5 +42,13 @@
     "tags": [
       "teste"
     ]
+  },
+  {
+    "name": "Mentiroso Profissional",
+    "efeito": "Você ganha +5 de modificador ao fazer teste de carisma mentindo",
+    "requisito": "carisma Rank 2",
+    "tags": [
+      "Carisma"
+    ]
   }
 ]
