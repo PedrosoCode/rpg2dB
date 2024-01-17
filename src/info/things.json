@@ -178,5 +178,19 @@
       "medieval",
       "equipamento"
     ]
+  },
+  {
+    "name": "Garrafa",
+    "type": "Recipiente",
+    "cost": "$ 15",
+    "weight": "3.0",
+    "rarity": "comum",
+    "effect": "Uma garrafa que lhe permite armanzenas liquidos",
+    "tags": [
+      "garrafa",
+      "moderno",
+      "medieval",
+      "equipamento"
+    ]
   }
 ]
