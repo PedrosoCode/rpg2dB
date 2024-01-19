@@ -50,5 +50,14 @@
     "tags": [
       "Carisma"
     ]
+  },
+  {
+    "name": "O mais rápido do oeste",
+    "efeito": "Você 1d6 duas vezes e escolhe o maior resultado, esse é o número de balas que você dispara em um único turno com uma única ação, válido somente para revolver",
+    "requisito": "pontaria Rank 5",
+    "tags": [
+      "Pontaria",
+      "Combate"
+    ]
   }
 ]
