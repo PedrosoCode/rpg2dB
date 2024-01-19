@@ -59,5 +59,14 @@
       "Pontaria",
       "Combate"
     ]
+  },
+  {
+    "name": "Disparo concentrado",
+    "efeito": "Ao usar uma arma de projétil, você pode uma vez por dia escolher quando o ataque (caso acerte) seja um crítico",
+    "requisito": "pontaria Rank 2",
+    "tags": [
+      "Pontaria",
+      "Combate"
+    ]
   }
 ]
