@@ -68,5 +68,14 @@
       "Pontaria",
       "Combate"
     ]
+  },
+  {
+    "name": "Relógio Biológico",
+    "efeito": "Você sempre sabe que horas são, independente das circunstâncias",
+    "requisito": "sabedoria Rank 2",
+    "tags": [
+      "Sabedoria",
+      "Utilidade"
+    ]
   }
 ]
