@@ -115,5 +115,18 @@
       "foice",
       "medieval"
     ]
+  },
+  {
+    "name": "Frigideira",
+    "atrAcerto": "1H",
+    "atrBonus": "DEX",
+    "throw": "20ft",
+    "damage": "1D6+1",
+    "dtype": "Contundente ou concussão",
+    "tags": [
+      "Utensilios de cozinha",
+      "medieval",
+      "Moderno"
+    ]
   }
 ]
