@@ -192,5 +192,19 @@
       "medieval",
       "equipamento"
     ]
+  },
+  {
+    "name": "Kit de artes",
+    "type": "ferramenta",
+    "cost": "$ 50",
+    "weight": "3.0",
+    "rarity": "comum",
+    "effect": "Um kit contendo ferramentas para artesanato, como pincéis, além de tintas e outros químicos",
+    "tags": [
+      "arte",
+      "moderno",
+      "medieval",
+      "equipamento"
+    ]
   }
 ]
