@@ -8,6 +8,8 @@ import './bulma/css/bulma.min.css';
 import './index.scss';
 import 'bootstrap/dist/css/bootstrap.css'; // Importe os estilos
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Importe os scripts
+import axios from 'axios';
+
 import SheetsPage from './pages/SheetsPage';
 import EquipsPage from './pages/EquipsPage';
 import WorldPage from './pages/WorldPage';
